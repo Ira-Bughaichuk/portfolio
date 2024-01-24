@@ -69,9 +69,8 @@ const config: Config = {
       },
       // FONTS
       fontFamily: {
-        robotoBold: ['var(--font-roboto-bold)'],
-        roboroReg: ['var(--font-roboto-reg)']
-        // manrope: ["var(--font-manrope)"],
+        roboto: ["var(--font-roboto)"],
+        condensed:["var(--font-roboto-condensed)"],
       },
       // TRANSITION
       transitionDuration: {
