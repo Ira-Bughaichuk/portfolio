@@ -46,13 +46,14 @@ const config: Config = {
         },
         "color-bg": {
           primary: "#FFFFFF",
-          // navigation: "bg-gradient-to-r from-gray-400 via-gray-600 to-brown-600",
-          // hero: "bg-gradient-to-r from-brown-600 via-gray-600 to-white",
-          // contacts: "bg-gradient-to-r from-rgba-107-161-233-70 to-rgba-197-219-249-70",
+            // navigation: "bg-gradient-to-r from-gray-400 via-gray-600 to-brown-600",
+            // hero: "bg-gradient-to-r from-brown-600 via-gray-600 to-white",
+            // contacts: "bg-gradient-to-r from-rgba-107-161-233-70 to-rgba-197-219-249-70",
 
           //   navigation: 'linear-gradient(115deg, #DDDEDC 5.05%, #9B9086 53.78%, #875531 88.73%)',
           //   hero: 'linear-gradient(115deg, #875531 4.61%, #9B9086 53.78%, #DDDEDC 88.73%)',
           //   contacts: 'linear-gradient(112deg, rgba(233, 161, 107, 0.70) 0.63%, rgba(240, 228, 215, 0.70) 59.11%, rgba(249, 219, 197, 0.70) 100%, rgba(251, 252, 217, 0.70) 100%)',
+                          
         },
         "color-bg-cart": {
           // primary: 'bg-gradient-to-r from-rgba-107-161-233-70 via-rgba-215-228-240-70 to-rgba-217-219-249-70',

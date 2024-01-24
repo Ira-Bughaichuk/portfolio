@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html,
 body{
-  @apply text-[15px] font-normal not-italic md:text-lg xl:text-xl bg-color-bg-primary text-color-primary  font-condensed
+  @apply h-full text-[15px] font-normal not-italic md:text-lg xl:text-xl bg-color-bg-primary text-color-primary  font-condensed
 }
+.wrapper{
+  @apply min-h-full flex flex-col
+}
+.page{
+  @apply flex flex-auto
+}
+header{
+  @apply bg-fuchsia-600 w-full h-6
+}
+footer{
+  @apply py-[10px] w-full bg-color-accent-primary 
+}
+
