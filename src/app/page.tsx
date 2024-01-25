@@ -7,7 +7,9 @@ export default function Home() {
     <div className="wrapper">
       <Header />
       <main className="page">
+        <div className="container">
         <Hero />
+        </div>
       </main>
       <Footer />
     </div>
