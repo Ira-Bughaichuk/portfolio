@@ -1,6 +1,7 @@
 import Footer from "./../sections/Footer/Footer";
 import Header from "./../sections/Header/Header";
 import Hero from "./../sections/Hero/Hero";
+import About from './../sections/About/About';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <main className="page mx-auto">
         <Hero />
+        <About />
       </main>
       <Footer />
     </div>
