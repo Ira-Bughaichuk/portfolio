@@ -6,10 +6,8 @@ export default function Home() {
   return (
     <div className="wrapper">
       <Header />
-      <main className="page">
-        <div className="container">
+      <main className="page mx-auto">
         <Hero />
-        </div>
       </main>
       <Footer />
     </div>

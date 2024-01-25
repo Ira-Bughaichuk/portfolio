@@ -3,19 +3,71 @@
 @tailwind utilities;
 
 html,
-body{
-  @apply h-full text-[15px] font-normal not-italic md:text-lg xl:text-xl bg-color-bg-primary text-color-primary  font-condensed
+body {
+  @apply h-full text-[15px] font-normal not-italic md:text-lg xl:text-xl bg-color-bg-primary text-color-primary  font-condensed;
 }
-.wrapper{
-  @apply min-h-full flex flex-col
+.wrapper {
+  @apply min-h-full flex flex-col;
 }
-.page{
-  @apply flex flex-auto
+.page {
+  @apply flex flex-auto;
 }
-header{
-  @apply bg-fuchsia-600 w-full h-6
+header {
+  @apply bg-fuchsia-600 w-full h-6;
 }
-footer{
-  @apply py-[10px] w-full bg-color-accent-primary 
+footer {
+  @apply py-[10px] w-full bg-color-accent-primary;
 }
 
+/* .border-gradient {
+  border-color: linear-gradient(
+    115deg,
+    #875531 4.61%,
+    #9b9086 53.78%,
+    #dddedc 88.73%
+  );
+} */
+
+/* bg-gradient-to-r from-[#875531] from-[4.61%] via-[#9B9086] via-[53.78%] to-[#DDDEDC] to-[88.73%] */
+.hero-gradient {
+  background: linear-gradient(
+    115deg,
+    #875531 4.61%,
+    #9b9086 53.78%,
+    #dddedc 88.73%
+  );
+}
+.navigation-gradient {
+  background: linear-gradient(
+    115deg,
+    #dddedc 5.05%,
+    #9b9086 53.78%,
+    #875531 88.73%
+  );
+}
+.contacts-gradient {
+  background: linear-gradient(
+    112deg,
+    rgba(233, 161, 107, 0.7) 0.63%,
+    rgba(240, 228, 215, 0.7) 59.11%,
+    rgba(249, 219, 197, 0.7) 100%,
+    rgba(251, 252, 217, 0.7) 100%
+  );
+}
+.cart-primary-gradient {
+  background: linear-gradient(
+    112deg,
+    rgba(233, 161, 107, 0.7) 0.63%,
+    rgba(240, 228, 215, 0.7) 59.11%,
+    rgba(249, 219, 197, 0.7) 100%,
+    rgba(251, 252, 217, 0.7) 100%
+  );
+}
+.cart-extra-gradient {
+  background: linear-gradient(
+    115deg,
+    #e9a16b 4.61%,
+    rgba(254, 226, 205, 0.6) 48.56%,
+    rgba(254, 255, 193, 0.4) 88.73%
+  );
+}
