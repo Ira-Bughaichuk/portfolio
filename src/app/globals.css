@@ -4,7 +4,7 @@
 
 html,
 body {
-  @apply h-full text-[15px] font-normal not-italic md:text-lg xl:text-xl bg-color-bg-primary text-color-primary  font-condensed;
+  @apply h-full text-[15px] font-normal not-italic md:text-lg xl:text-xl bg-color-bg-primary text-color-primary 
 }
 .wrapper {
   @apply min-h-full flex flex-col;

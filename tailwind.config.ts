@@ -12,13 +12,13 @@ const config: Config = {
   theme: {
     // MEDIA QUERIES
     screens: {
-      sm: "480px",
-      md: "768px",
-      xl: "1280px",
+      sm: "390px",//480
+      md: "833px", //768
+      xl: "1440px",
 
-      smOnly: { max: "767.98px" },
-      mdOnly: { min: "768px", max: "1279.98px" },
-      notXl: { max: "1279.98px" },
+      // smOnly: { max: "767.98px" },
+      // mdOnly: { min: "768px", max: "1279.98px" },
+      // notXl: { max: "1439.98px" },
     },
     // THEME
     extend: {
@@ -46,6 +46,7 @@ const config: Config = {
         },
         "color-bg": {
           primary: "#FFFFFF",
+          secondary:"#988475",
         },
         "color-bg-cart": {
           // primary: 'bg-gradient-to-r from-rgba-107-161-233-70 via-rgba-215-228-240-70 to-rgba-217-219-249-70',
@@ -64,6 +65,7 @@ const config: Config = {
       fontFamily: {
         roboto: ["var(--font-roboto)"],
         condensed:["var(--font-roboto-condensed)"],
+        mono: ["var(--font-roboto_mono)"],
       },
       // TRANSITION
       transitionDuration: {

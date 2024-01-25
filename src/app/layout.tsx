@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Roboto, Roboto_Condensed } from "next/font/google";
+import { Roboto, Roboto_Condensed, Roboto_Mono } from "next/font/google";
 
 import "./globals.css";
 
@@ -15,6 +15,12 @@ import "./globals.css";
   weight:  ['300', '400', '500', '700'],
   display: 'swap',
   variable: '--font-roboto-condensed',
+ });
+ const roboto_mono = Roboto_Mono({ 
+  subsets: ['latin'],
+  weight:  '500',
+  display: 'swap',
+  variable: '--font-roboto_mono',
  });
  
 export const metadata: Metadata = {
