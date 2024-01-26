@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Title from "./../../components/Title/Title";
 import about from "./../../../public/images/about.jpg";
+import Buttons from "@/components/Button/Buttons";
 export default function About() {
   return (
     <section className="section">
@@ -19,7 +20,7 @@ export default function About() {
           </div>
           {/* md:w-[494px] xl:w-[760px] */}
           <div className="flex flex-col">
-            <Title />
+            <Title title={'About me'}/>
             <div className="flex flex-col gap-5 mb-4 md:mb-5 xl:mb-[60px]">
               <p className="text-[15] leading-[22.5px] md:text-lg md:leading-[27px] xl:leading-9 xl:text-2xl">
                 I am an experienced front-end developer with a focus on React.js
@@ -32,10 +33,12 @@ export default function About() {
                 interaction is essential for project success. I value learning
                 opportunities and constantly strive to improve my skills.
               </p>
-              <ul className="flex flex-col md:flex-row gap-2 md:gap-[30px]">
-                <li></li>
-              </ul>
             </div>
+            <ul className="flex flex-col md:flex-row gap-2 md:gap-[30px]">
+                <li><Buttons title={'Send an e-mail'} path={"mailto:irynabugaichuk7@gmail.com"} icon={'/'}/></li>
+                <li><Buttons title={'Linkedin'} path={'https://www.linkedin.com/feed/'} icon={'/'}/></li>
+                <li><Buttons title={'GitHub'} path={'https://github.com/Ira-Bughaichuk'} icon={'/'}/></li>
+              </ul>
           </div>
         </div>
       </div>
