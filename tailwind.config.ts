@@ -16,9 +16,9 @@ const config: Config = {
       md: "833px", //768
       xl: "1440px",
 
-      // smOnly: { max: "767.98px" },
+      smOnly: { max: "832.98px" }, //767.98
       // mdOnly: { min: "768px", max: "1279.98px" },
-      // notXl: { max: "1439.98px" },
+       notXl: { max: "1439.98px" },
     },
     // THEME
     extend: {
@@ -46,6 +46,7 @@ const config: Config = {
           primary: "#723406",
           secondary: "#BF590D",
           extra: "#E9A16B",
+          main: "#FFFFFF",
         },
       },
       // FONTS

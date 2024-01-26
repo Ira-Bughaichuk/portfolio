@@ -3,6 +3,7 @@ import Header from "./../sections/Header/Header";
 import Hero from "./../sections/Hero/Hero";
 import About from './../sections/About/About';
 import Skills from './../sections/Skills/Skills';
+import Education from './../sections/Education/Education';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
+        <Education />
       </main>
       <Footer />
     </div>
