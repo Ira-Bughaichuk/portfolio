@@ -6,6 +6,9 @@ html,
 body {
   @apply h-full text-[15px] font-normal not-italic md:text-lg xl:text-xl bg-color-bg-primary text-color-primary 
 }
+.lock{
+  @apply overflow-hidden
+}
 .wrapper {
   @apply min-h-full flex flex-col;
 }
@@ -13,10 +16,10 @@ body {
   @apply flex flex-col flex-auto;
 }
 header {
-  @apply bg-fuchsia-600 w-full h-6;
+  @apply w-full bg-color-bg-primary pt-[40px] pb-[26px] md:py-[26px] xl:py-[20px]
 }
 footer {
-  @apply py-[10px] w-full bg-color-accent-primary;
+  @apply bg-color-accent-primary w-full py-[10px]
 }
 .section{
   @apply py-[40px] md:py-[50px] xl:py-[80px]
@@ -73,4 +76,17 @@ footer {
     rgba(254, 226, 205, 0.6) 48.56%,
     rgba(254, 255, 193, 0.4) 88.73%
   );
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

@@ -36,24 +36,11 @@ const config: Config = {
       colors: {
         "color-primary": "#000000",
         "color-secondary": "#FFFFFF",
-        "color-text": {
-          primary: "#723406",
-          extra: "#E9A16B",
-        },
-        "color-accent": {
-          primary: "#723406",
-          extra: "#E9A16B",
-        },
+        "color-accent-primary":"#723406",
+        "color-accent-extra":"#E9A16B",
         "color-bg": {
           primary: "#FFFFFF",
           secondary:"#988475",
-        },
-        "color-bg-cart": {
-          // primary: 'bg-gradient-to-r from-rgba-107-161-233-70 via-rgba-215-228-240-70 to-rgba-217-219-249-70',
-          // extra: 'bg-gradient-to-r from-rgba-107-161-233-60 via-rgba-205-226-254-60 to-rgba-193-255-254-40',
-
-          // primary: "linear-gradient(112deg, rgba(233, 161, 107, 0.70) 0.63%, rgba(240, 228, 215, 0.70) 59.11%, rgba(249, 219, 197, 0.70) 100%, rgba(251, 252, 217, 0.70) 100%)",
-          // extra: "linear-gradient(115deg, #E9A16B 4.61%, rgba(254, 226, 205, 0.60) 48.56%, rgba(254, 255, 193, 0.40) 88.73%)",
         },
         "color-btn": {
           primary: "#723406",
@@ -66,6 +53,7 @@ const config: Config = {
         roboto: ["var(--font-roboto)"],
         condensed:["var(--font-roboto-condensed)"],
         mono: ["var(--font-roboto_mono)"],
+        openSans:["var(--font-open_sans)"],
       },
       // TRANSITION
       transitionDuration: {

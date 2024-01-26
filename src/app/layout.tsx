@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Roboto, Roboto_Condensed, Roboto_Mono } from "next/font/google";
+import { Roboto, Roboto_Condensed, Roboto_Mono, Open_Sans } from "next/font/google";
 
 import "./globals.css";
 
@@ -21,6 +21,12 @@ import "./globals.css";
   weight:  '500',
   display: 'swap',
   variable: '--font-roboto_mono',
+ });
+ const open_sans = Open_Sans({ 
+  subsets: ['latin'],
+  weight:  '700',
+  display: 'swap',
+  variable: '--font-open_sans',
  });
  
 export const metadata: Metadata = {

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="wrapper">
       <Header />
-      <main className="page mx-auto">
+      <main className="page">
         <Hero />
         <About />
       </main>

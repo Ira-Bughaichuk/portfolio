@@ -3,7 +3,7 @@ import profileMe from "../../../public/images/hero.jpg";
 
 export default function Hero() {
   return (
-    <section className="hero-gradient  w-full pt-[33px] pb-[40px] md:pt-[40px] md:pb-[80px] xl:pt-[25px] xl:pb-[50px]">
+    <section className="overflow-hidden hero-gradient w-full pt-[33px] pb-[40px] md:pt-[40px] md:pb-[80px] xl:pt-[25px] xl:pb-[50px]">
       <div className="container">
         <div className="flex flex-col md:flex-row-reverse items-center gap-6 xl:gap-[27px] ">
         <div className="flex-1 md:flex-initial md:w-[352px] xl:w-[550px] relative">
@@ -52,7 +52,7 @@ export default function Hero() {
               </div>
             </div>
             <button type="button" className="font-roboto px-5 py-4 w-full flex gap-4 md:w-[198px] xl:w-[281px] xl:px-[40px] xl:gap-[26px] justify-center  bg-color-btn-primary outline-none border-none rounded-[8px] text-xl font-bold leading-6 xl:text-2xl xl:leading-[28.8px]">
-              DownLoad CV <Image src="" alt="" />
+              DownLoad CV 
             </button>
           </div>
         </div>
