@@ -12,6 +12,11 @@ export type EducationCart = {
   data: string;
   path: string;
 };
+export type Languages = {
+  languages: string;
+  level: string;
+  path: string;
+};
 
 //props
 
@@ -29,3 +34,11 @@ export type ICartEducationProps = {
   data: string;
   path: string;
 };
+
+export type ILanguagesCartProps = {
+
+    languages: string;
+    level: string;
+ 
+};
+
