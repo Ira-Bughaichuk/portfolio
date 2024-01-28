@@ -17,6 +17,14 @@ export type Languages = {
   level: string;
   path: string;
 };
+export type Project = {
+  title: string,
+  subTitle: string,
+  description: string,
+  image: string,
+  pathToGitHub: string, 
+  pathToLivePage: string,
+}
 
 //props
 

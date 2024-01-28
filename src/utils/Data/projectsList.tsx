@@ -1,0 +1,50 @@
+import { Project } from "../types";
+
+ export const projectsList:Project[] =[{
+    title:'',
+    subTitle:'',
+    description:"",
+    image:"",
+    pathToGitHub:"", 
+    pathToLivePage:"",
+},
+{
+    title:'',
+    subTitle:'',
+    description:"",
+    image:"",
+    pathToGitHub:"", 
+    pathToLivePage:"",
+},
+{
+    title:'',
+    subTitle:'',
+    description:"",
+    image:"",
+    pathToGitHub:"", 
+    pathToLivePage:"",
+},
+{
+    title:'',
+    subTitle:'',
+    description:"",
+    image:"",
+    pathToGitHub:"", 
+    pathToLivePage:"",
+},
+{
+    title:'',
+    subTitle:'',
+    description:"",
+    image:"",
+    pathToGitHub:"", 
+    pathToLivePage:"",
+},
+{
+    title:'',
+    subTitle:'',
+    description:"",
+    image:"",
+    pathToGitHub:"", 
+    pathToLivePage:"",
+}]
