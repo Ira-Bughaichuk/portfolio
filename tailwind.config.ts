@@ -55,6 +55,7 @@ const config: Config = {
         condensed:["var(--font-roboto-condensed)"],
         mono: ["var(--font-roboto_mono)"],
         openSans:["var(--font-open_sans)"],
+        ribeye_marrow:["var(--font-ribeye_marrow)"],
       },
       // TRANSITION
       transitionDuration: {

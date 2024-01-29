@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Roboto, Roboto_Condensed, Roboto_Mono, Open_Sans } from "next/font/google";
+import { Roboto, Roboto_Condensed, Roboto_Mono, Open_Sans, Ribeye_Marrow } from "next/font/google";
 
 import "./globals.css";
 
@@ -28,6 +28,12 @@ import "./globals.css";
   display: 'swap',
   variable: '--font-open_sans',
  });
+ const ribeye_marrow = Ribeye_Marrow({ 
+  subsets: ['latin'],
+  weight:  '400',
+  display: 'swap',
+  variable: '--font-ribeye_marrow',
+ });
  
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -41,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto_condensed.className}>{children}</body>
+      <body className={`${roboto.className}  ${roboto_condensed.className} ${roboto_mono.variable} ${open_sans.variable} ${ribeye_marrow.variable}`}>{children}</body>
       {/* <body>{children}</body> */}
     </html>
   );

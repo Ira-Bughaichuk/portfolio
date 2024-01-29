@@ -4,7 +4,7 @@
 
 html,
 body {
-  @apply h-full text-[15px] font-normal not-italic md:text-lg xl:text-xl bg-color-bg-primary text-color-primary 
+  @apply font-condensed h-full text-[15px] font-normal not-italic md:text-lg xl:text-xl bg-color-bg-primary text-color-primary 
 }
 .lock{
   @apply overflow-hidden
@@ -91,3 +91,16 @@ footer {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.cart_offer1 {
+  grid-area: 1 / 1 / 2 / 7;
+}
+.cart_offer2 {
+  grid-area: 2 / 2 / 3 / 8;
+}
+.cart_offer3 {
+  grid-area: 3 / 3 / 4 / 9;
+}
+.cart_offer4 {
+  grid-area: 4 / 4 / 5 / 10;
+} 

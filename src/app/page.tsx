@@ -6,6 +6,7 @@ import Skills from './../sections/Skills/Skills';
 import Education from './../sections/Education/Education';
 import Languages from './../sections/Languages/Languages';
 import Projects from './../sections/Projects/Projects';
+import Offer from './../sections/Offer/Offer';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
+        <Offer />
         <Projects />
         <Education />
         <Languages />
