@@ -1,8 +1,5 @@
+import { ICartSkillProps } from "@/utils/types";
 
-export type ICartSkillProps = {
-    title:string,
-    index: number,
-}
 export default function CartSkill({title, index}: ICartSkillProps) {
   const currentColor = (index % 2) ? "bg-color-btn-main" : "cart-primary-gradient";
   return (
@@ -10,4 +7,3 @@ export default function CartSkill({title, index}: ICartSkillProps) {
   )
 }
 
-// w-[140px] h-[140px] xl:w-[160px] xl:h-[160px]

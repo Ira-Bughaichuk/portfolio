@@ -2,10 +2,15 @@ export type NavLink = {
   title: string;
   path: string;
 };
-// export type SkillsList = {
-//   tech: string[];
-//   soft: string[];
-// };
+export type SkillsList = {
+  tech: Skill[];
+  soft: Skill[];
+};
+export type Skill = {
+  title: string;
+  currentClass: string;
+};
+
 export type EducationCart = {
   university: string;
   profession: string;
@@ -56,3 +61,7 @@ export type IOfferProps = {
   title: string;
   description: string;
 };
+export type ICartSkillProps = {
+  title:string,
+  index: number,
+}
