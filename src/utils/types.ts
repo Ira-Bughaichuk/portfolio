@@ -2,10 +2,10 @@ export type NavLink = {
   title: string;
   path: string;
 };
-export type SkillsList = {
-  tech: string[];
-  soft: string[];
-};
+// export type SkillsList = {
+//   tech: string[];
+//   soft: string[];
+// };
 export type EducationCart = {
   university: string;
   profession: string;

@@ -7,7 +7,7 @@ import s from "./offer.module.css";
 
 export default function Offer() {
   return (
-    <section>
+    <section className="section">
       <div className="container mx-auto">
         <Title title={"What I Offer"} />
         <ul className={` ${s.parent}`}>
