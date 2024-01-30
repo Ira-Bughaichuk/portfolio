@@ -18,14 +18,18 @@ export type Languages = {
   path: string;
 };
 export type Project = {
-  title: string,
-  subTitle: string,
-  description: string,
-  image: string,
-  pathToGitHub: string, 
-  pathToLivePage: string,
-}
-
+  title: string;
+  subTitle: string;
+  description: string;
+  image: string;
+  pathToGitHub: string;
+  pathToLivePage: string;
+};
+export type Offer = {
+  currentClass: string;
+  title: string;
+  description: string;
+};
 //props
 
 export type INavLinkProps = {
@@ -44,9 +48,11 @@ export type ICartEducationProps = {
 };
 
 export type ILanguagesCartProps = {
-
-    languages: string;
-    level: string;
- 
+  languages: string;
+  level: string;
 };
-
+export type IOfferProps = {
+  index: number;
+  title: string;
+  description: string;
+};

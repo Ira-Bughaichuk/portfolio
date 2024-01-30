@@ -1,4 +1,4 @@
-export type Offer = { currentClass: string; title: string; description: string };
+
 export const offerList: Offer[] = [
   {
     currentClass: "cart_offer1",
