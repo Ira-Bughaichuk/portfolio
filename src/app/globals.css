@@ -129,7 +129,6 @@ footer {
   }
   .cart_image{
     grid-area: 1 / 1 / 5 / 5;
-    /* grid-area: 2 / 1 / 5 / 3; */
   }
   .cart_offer3 {
     grid-area:3 / 4 / 4 / 10;
