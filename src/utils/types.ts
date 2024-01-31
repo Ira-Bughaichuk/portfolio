@@ -23,12 +23,14 @@ export type Languages = {
   path: string;
 };
 export type Project = {
+  id:number;
   title: string;
   subTitle: string;
   description: string;
   image: string;
   pathToGitHub: string;
   pathToLivePage: string;
+  tag: string[];
 };
 export type Offer = {
   currentClass: string;
