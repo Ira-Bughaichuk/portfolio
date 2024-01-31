@@ -5,13 +5,14 @@ import Logo from "./../Logo/Logo";
 import BtnDownLoad from "./../BtnDownLoad/BtnDownLoad";
 
 export type IMenuOverlayProps = {
+  open:boolean;
   handlerToggle: () => void;
 };
-export default function MenuOverlay({ handlerToggle }: IMenuOverlayProps) {
+export default function MenuOverlay({ open, handlerToggle }: IMenuOverlayProps) {
   return (
-    <div className="fixed z-20 top-0 left-0 w-full h-screen navigation-gradient overflow-y-auto">
+    <div className={`fixed z-20 top-0 left-0 duration-500 transition ease-in-out ${open ? "left-0" : "left-[-100%]"} w-full h-full navigation-gradient overflow-y-auto`}>
         <div className="absolute top-4 right-4 md:top-5 md:right-5">
-        <ButtonNav handlerToggle={handlerToggle} title={"close"} />
+        <ButtonNav handlerToggle={handlerToggle} open={open} />
         </div>
       
     <div className="px-4 py-[44px] md:px-[40px] flex flex-col md:flex-row gap-[30px] md:gap-[62px]">

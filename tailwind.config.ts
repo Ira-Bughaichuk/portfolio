@@ -58,12 +58,12 @@ const config: Config = {
         ribeye_marrow:["var(--font-ribeye_marrow)"],
       },
       // TRANSITION
-      transitionDuration: {
-        DEFAULT: "300ms",
-      },
-      transitionTimingFunction: {
-        DEFAULT: "cubic-bezier(0.4, 0, 0.2, 1)",
-      },
+      // transitionDuration: {
+      //   DEFAULT: "500ms",
+      // },
+      // transitionTimingFunction: {
+      //   DEFAULT: "cubic-bezier(0.4, 0, 0.2, 1)",
+      // },
     },
   },
   plugins: [],
