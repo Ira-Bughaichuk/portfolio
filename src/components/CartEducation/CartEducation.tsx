@@ -5,7 +5,7 @@ import Link from "next/link";
   
 export default function CartEducation( {university, profession, data, path } : ICartEducationProps) {
   return (
-    <div className='w-full h-full pb-[6px] md:pb-3 xl:pb-4  bg-color-btn-primary rounded-[10px]  '>
+    <div className='font-condensed w-full h-full pb-[6px] md:pb-3 xl:pb-4  bg-color-btn-primary rounded-[10px]  '>
         {/* py-2 pb-[6px] pt-2 mb:py-[30px] md:px-[30px] xl:py-6 bg-color-btn-main mb-[3px] md:mb-4 xl:mb-[9px] */}
     <div className="flex flex-col justify-between notXl:h-[80%]  py-2 md:py-[20px] xl:py-6 bg-color-btn-main text-center  rounded-[10px] border-solid border-[1px] border-color-primary ">
         <p className="text-base font-medium leading-[19.2px] mb-2 md:mb-4 md:text-xl md:font-bold md:leading-6 xl:text-2xl xl:leading-[28.8px]">{university}</p>

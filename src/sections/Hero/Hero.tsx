@@ -10,7 +10,7 @@ export default function Hero() {
           <div className='absolute md:w-[400px] md:h-[623px] xl:w-[519px] xl:h-[810px] transform -rotate-[29.029deg] bg-color-bg-secondary xl:rounded-[810px] md:rounded-[623px] filter blur-[35px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'></div>
             {/* for mobile */}
             <div className="relative block md:hidden">
-            <h1 className=" absolute top-1/2 -left-[90%] w-[372px] text-center transform -rotate-[90deg] font-mono text-color-secondary text-4xl not-italic font-medium leading-[43.2px]">Frontend <span className="w-full flex justify-end">Developer</span></h1>
+            <h1 className="font-mono absolute top-1/2 -left-[90%] w-[372px] text-center transform -rotate-[90deg] text-color-secondary text-4xl not-italic font-medium leading-[43.2px]">Frontend <span className="w-full flex justify-end">Developer</span></h1>
             <div className="z-10 relative w-[260px] h-[372px] md:w-[330px] md:h-[471px] xl:w-[550px] xl:h-[786px] overflow-hidden rounded-full border-[2px] border-solid">
               <Image
                 src={profileMe}
@@ -37,7 +37,7 @@ export default function Hero() {
           </div>
           
           <div className="font-mono text-color-secondary flex-1  md:flex-auto">
-            <h1 className="hidden md:block mb-[70px] text-4xl not-italic font-medium leading-[43.2px] md:text-5xl md:leading-[57.6px] xl:text-8xl xl:leading-[115.2px]">Frontend <span className="w-full flex justify-end">Developer</span></h1>
+            <h1 className="font-mono hidden md:block mb-[70px] text-4xl not-italic font-medium leading-[43.2px] md:text-5xl md:leading-[57.6px] xl:text-8xl xl:leading-[115.2px]">Frontend <span className="w-full flex justify-end">Developer</span></h1>
             <div className="mb-[34px] md:mb-[60px] flex flex-col gap-5 md:gap-4 xl:gap-[30px] leading-[19.5px] md:leading-[20.8px] xl:leading-[26px]">
               <p className='md:w-[361px] xl:w-[535px]'>
                 Welcome to my personal page, where I share my passion for web

@@ -14,7 +14,7 @@ export default function Skills() {
       <div className="container mx-auto">
         <Title title={"My skills"} />
         <div className="relative">
-          <h3 className="text-xl font-medium leading-6 mb-4 md:mb-[30px] md:leading-[38.4px] md:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Tech Skills</h3>
+          <h3 className="font-condensed text-xl font-medium leading-6 mb-4 md:mb-[30px] md:leading-[38.4px] md:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Tech Skills</h3>
            <ul className={`${s.parent_tech} mb-[20px] md:mb-[40px]`}>
             {techList &&
               techList.map(({currentClass, title}, index) => (
@@ -23,7 +23,7 @@ export default function Skills() {
                 </li>
               ))}
           </ul>
-          <h3 className="text-xl font-medium leading-6 mb-4 md:mb-[30px] md:leading-[38.4px] md:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Soft Skills</h3>
+          <h3 className="font-condensed text-xl font-medium leading-6 mb-4 md:mb-[30px] md:leading-[38.4px] md:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Soft Skills</h3>
           <ul className={`${s.parent_soft} mb-[20px] md:mb-0`}>
             {softList &&
               softList.map(({currentClass, title}, index) => (

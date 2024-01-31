@@ -9,8 +9,8 @@ export default function CartProjects() {
         <Image src={phonebook} alt='Phonebook' width={500} height={400}
         className="object-contain w-[300px] h-[180px] xl:w-[500px] xl:h-[400px] rounded-[10px] overflow-hidden" />
         <div className="flex flex-col gap-2 xl:gap-4">
-          <h2 className="text-xl font-bold leading-6 xl:leading-[28.8px]">Phonebook</h2>
-          <p className="text-color-accent-primary text-base font-medium leading-[19.2px] xl:text-xl xl:font-normal xl:leading-6">React (Hooks, Routers, Redux, Redux Toolkit), Styled Component, Axios</p>
+          <h2 className="font-roboto text-xl font-bold leading-6 xl:leading-[28.8px]">Phonebook</h2>
+          <p className="font-condensed text-color-accent-primary text-base font-medium leading-[19.2px] xl:text-xl xl:font-normal xl:leading-6">React (Hooks, Routers, Redux, Redux Toolkit), Styled Component, Axios</p>
           {/* <div className="text-[14px] leading-[21px] xl:text-2xl xl:leading-[31.2px]">This is a simple phone book that utilizes the Swagger backend API. It allows users to register and log in, add, delete, and filter contacts, as well as log out. Role: Developer.</div> */}
           <div className="flex justify-center gap-2 xl:gap-4 xl:justify-end">
               <Buttons title={'GitHub'} icon={'ic'} path={'/'} />
