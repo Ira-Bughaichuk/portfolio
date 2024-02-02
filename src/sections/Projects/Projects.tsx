@@ -4,6 +4,8 @@ import Title from './../../components/Title/Title';
 import CartProjects from './../../components/CartProjects/CartProjects';
 import { projectsList } from './../../utils/Data/projectsList';
 import BtnProject from '@/components/BtnProject/BtnProject';
+import  Link  from 'next/link';
+import BtnToPage from './../../components/BtnToPage/BtnToPage';
 
 
 export default function Projects() {
@@ -20,7 +22,8 @@ export default function Projects() {
     <section className="section">
         <div className="container mx-auto">
             <Title title='My Projects'/>
-            <div>
+            <BtnToPage path={'/projects'} title={"All projects"}/>
+            {/* <div className='flex gap-4 xl:gap-[30px] justify-end mb-4 xl:mb-[44px]'>
               <BtnProject  onClick={handleTagChange} tag="All" isSelected={tag === "All"}/>
               <BtnProject  onClick={handleTagChange} tag="Com" isSelected={tag === "Com"}/>
               <BtnProject  onClick={handleTagChange} tag="Pet" isSelected={tag === "Pet"}/>
@@ -29,11 +32,7 @@ export default function Projects() {
               {filteredProjects && filteredProjects.map((item,index) =>(
                 <li key={index}><CartProjects item={item}/></li>
               ))}
-              {/* <li><CartProjects /></li>
-              <li><CartProjects /></li>
-              <li><CartProjects /></li>
-              <li><CartProjects /></li> */}
-            </ul>
+            </ul> */}
         </div>
     </section>
 

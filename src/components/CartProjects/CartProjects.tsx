@@ -23,10 +23,16 @@ export default function CartProjects({item}:ICartProjectsProps) {
     <div className="group">
     <div className=" h-full group-hover:bg-gradient-to-r from-[#e9a16b] from-[4.61%] via-[rgba(254, 226, 205, 0.6)] via-[48.56%] to-[rgba(254, 255, 193, 0.4)] to-[88.73%]
      flex flex-col gap-4 items-center xl:gap-[30px] px-4 py-4 xl:px-[40px] xl:py-[40px] rounded-[10px] overflow-hidden border-[1px] border-solid border-color-btn-extra">
-        <Image src={image} alt={title} width={500} height={400}
+        <div className="relative w-[300px] h-[180px] xl:w-[500px] xl:h-[400px] rounded-[10px] ">
+          <Image src={image} alt={title} width={500} height={400}
+          className="object-contain w-[300px] xl:w-[500px] rounded-[10px] overflow-hidden
+           absolute transform transition-all duration-500 opacity-100 scale-y-100 group-hover:scale-y-90 scale-x-100 group-hover:scale-x-110" />
+        </div>
+        {/* <Image src={image} alt={title} width={500} height={400}
         className="object-contain w-[300px] xl:w-[500px] rounded-[10px] overflow-hidden
-        relative transform transition-all duration-500 opacity-100 scale-y-100 group-hover:scale-y-90" />
-        
+        relative transform transition-all duration-500 opacity-100 scale-y-100 group-hover:scale-y-90" /> */}
+
+
         <div className="h-[120px] group-hover:h-[200px] md:h-[163px] group-hover:md:h-[220px] xl:h-[200px]  group-hover:xl:h-[328px] transition-all duration-500 w-full flex flex-col justify-between">
           <div className="relative flex flex-col gap-2 xl:gap-4">
             <h2 className="transition-all duration-500 opacity-100 group-hover:opacity-0 font-roboto text-xl font-bold leading-6 xl:leading-[28.8px]">{title}</h2>
