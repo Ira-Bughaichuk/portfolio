@@ -7,6 +7,7 @@ import Education from './../sections/Education/Education';
 import Languages from './../sections/Languages/Languages';
 import Projects from './../sections/Projects/Projects';
 import Offer from './../sections/Offer/Offer';
+import Contacts from './../sections/Contacts/Contacts';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Projects />
         <Education />
         <Languages />
+        <Contacts />
       </main>
       <Footer />
     </div>

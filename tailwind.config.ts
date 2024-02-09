@@ -13,7 +13,8 @@ const config: Config = {
     // MEDIA QUERIES
     screens: {
       sm: "390px",//480
-      md: "833px", //768
+      mm: "744px",
+      md: "834px", //768
       xl: "1440px",
 
       smOnly: { max: "832.98px" }, //767.98
@@ -29,6 +30,7 @@ const config: Config = {
           DEFAULT: "1rem",    // 16px
           sm: "1rem",         // 16px
           md: "2.5rem",       // 40px
+          mm: "2.5rem",       // 40px
           xl: "3.75rem",      // 60px
         },
       },
