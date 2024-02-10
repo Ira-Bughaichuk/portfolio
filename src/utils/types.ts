@@ -24,6 +24,7 @@ export type Languages = {
 };
 export type Project = {
   id:number;
+  framework: string;
   title: string;
   subTitle: string;
   description: string;

@@ -40,6 +40,7 @@ const config: Config = {
         "color-secondary": "#FFFFFF",
         "color-accent-primary":"#723406",
         "color-accent-extra":"#E9A16B",
+        "color-accent-secondary":'#988475',
         "color-bg": {
           primary: "#FFFFFF",
           secondary:"#988475",
