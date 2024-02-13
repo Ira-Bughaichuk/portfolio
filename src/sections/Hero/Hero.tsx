@@ -1,5 +1,6 @@
 import Image from "next/image";
 import profileMe from "../../../public/images/hero.jpg";
+import Arrow from '../../../public/icons/arrow.svg';
 
 export default function Hero() {
   return (
@@ -51,8 +52,9 @@ export default function Hero() {
               </p>
               </div>
             </div>
-            <button type="button" className="font-roboto px-5 py-4 w-full flex gap-4 md:w-[198px] xl:w-[281px] xl:px-[40px] xl:gap-[26px] justify-center  bg-color-btn-primary outline-none border-none rounded-[8px] text-xl font-bold leading-6 xl:text-2xl xl:leading-[28.8px]">
+            <button type="button" className="transition duration-500 ease-in-out hover:bg-color-btn-extra focus:bg-color-btn-extra font-roboto px-5 py-4 w-full flex items-center gap-4 mm:w-[250px] xl:w-[350px] xl:px-[40px] xl:gap-[26px] justify-center  bg-color-btn-primary outline-none border-none rounded-[8px] text-xl font-bold leading-6 xl:text-2xl xl:leading-[28.8px]">
               DownLoad CV 
+              <Arrow width={24} height={24} className='w-4 h-4 xl:w-6 xl:h-6'/>
             </button>
           </div>
         </div>

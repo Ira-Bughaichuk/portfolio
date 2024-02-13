@@ -72,4 +72,4 @@ const config: Config = {
   plugins: [],
 };
 export default config;
- 
+// transition duration-500 ease-in-out hover:bg-color-btn-secondary focus:bg-color-btn-primary hover:border-color-btn-secondary focus:border-color-btn-primary hover:text-color-secondary focus:text-color-secondary 

@@ -1,8 +1,10 @@
+import Socials from './../Socials/Socials';
+
 export default function ContactsInfo() {
   return (
     <div className="flex flex-col gap-3 mm:flex-row mm:justify-between">
       <address>
-        <p className="mb-3 mm:mb-4 font-roboto text-[15px] leading-[18px] font-bold mm:text-2xl mm:leading-[28,8px] xl:text-4xl xl:leading-[43,2px]">
+        <p className="font-roboto mb-3 mm:mb-4  text-[15px] leading-[18px] font-bold mm:text-2xl mm:leading-[28,8px] xl:text-4xl xl:leading-[43,2px]">
           My contact:
         </p>
         <ul className="flex mm:flex-col mm:gap-4 mm:items-start justify-between items-center font-condensed text-[15px] leading-[22,5px] font-normal mm:text-xl mm:leading-6 xl:text-2xl xl:leading-9">
@@ -34,7 +36,7 @@ export default function ContactsInfo() {
         <p className="font-roboto text-[15px] font-bold leading-[18px] mm:text-2xl mm:leading-[28,8px] xl:text-4xl xl:leading-[43,2px]">
           I'm on social networks:
         </p>
-        <div>icons</div>
+        <Socials />
       </div>
     </div>
   );

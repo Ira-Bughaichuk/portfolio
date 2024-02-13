@@ -1,7 +1,12 @@
 import Image from "next/image";
 import Title from "./../../components/Title/Title";
+import Buttons  from './../../components/Buttons/Buttons';
 import about from "./../../../public/images/about.jpg";
-import Buttons from "@/components/Button/Buttons";
+
+import Email from '../../../public/icons/email.svg';
+import GitHub from '../../../public/icons/github.svg';
+import Linkedin from '../../../public/icons/linkedIn.svg';
+
 export default function About() {
   return (
     <section className="section">
@@ -35,9 +40,9 @@ export default function About() {
               </p>
             </div>
             <ul className="flex flex-col md:flex-row gap-2 md:gap-[30px]">
-                <li><Buttons title={'Send an e-mail'} path={"mailto:irynabugaichuk7@gmail.com"} icon={'/'}/></li>
-                <li><Buttons title={'Linkedin'} path={'https://www.linkedin.com/feed/'} icon={'/'}/></li>
-                <li><Buttons title={'GitHub'} path={'https://github.com/Ira-Bughaichuk'} icon={'/'}/></li>
+                <li><Buttons title={'Send an e-mail'} path={"mailto:irynabugaichuk7@gmail.com"}><Email width={20} height={20} className='w-[14px] h-[14px] mm:w-[18px] mm:h-[18px]  xl:w-[20px] xl:h-[20px]'/></Buttons></li>
+                <li><Buttons title={'Linkedin'} path={'https://www.linkedin.com/feed/'}><Linkedin width={20} height={20} className='w-[12px] h-[12px] mm:w-[16px] mm:h-[16px] xl:w-[20px] xl:h-[20px]'/></Buttons></li>
+                <li><Buttons title={'GitHub'} path={'https://github.com/Ira-Bughaichuk'}><GitHub width={20} height={20}  className='w-[12px] h-[12px] mm:w-[16px] mm:h-[16px] xl:w-[20px] xl:h-[20px]'/></Buttons></li>
               </ul>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { url } from "inspector";
 import Image from "next/image";
 import phonebook from '../../../public/images/phonebook.jpg';
-import Buttons from "../Button/Buttons";
+import Buttons from "../Buttons/Buttons";
 
 export type ICartProjectsProps = {
   item:{
