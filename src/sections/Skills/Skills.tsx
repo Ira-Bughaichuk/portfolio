@@ -1,9 +1,7 @@
-import Image from "next/image";
 import CartSkill from "./../../components/CartSkill/CartSkill";
 import Title from "./../../components/Title/Title";
 import { skillsList } from "./../../utils/Data/skillsList";
-import letsworkPhoto from '../../../public/images/lets-work.png';
-import s from './skills.module.css';
+
 
 
 export default function Skills() {
@@ -14,29 +12,46 @@ export default function Skills() {
       <div className="container mx-auto">
         <Title title={"My skills"} />
         <div className="relative">
-          <h3 className="font-condensed text-xl font-medium leading-6 mb-4 md:mb-[30px] md:leading-[38.4px] md:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Tech Skills</h3>
-           <ul className={`${s.parent_tech} mb-[20px] md:mb-[40px]`}>
+          <h3 className="font-condensed text-xl font-medium leading-6 mb-4 mm:mb-[30px] mm:leading-[38.4px] mm:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Tech Skills</h3>
+           {/* <ul className={`${s.parent_tech} mb-[20px] md:mb-[40px]`}>
             {techList &&
               techList.map(({currentClass, title}, index) => (
                 <li key={index} className={currentClass}>
                   <CartSkill title={title} index={index}/>
                 </li>
               ))}
+          </ul> */}
+          {/*  */}
+          <ul className='w-full xl:w-[930px] flex flex-wrap gap-x-[29px] gap-y-2 mm:gap-x-[34px] mm:gap-y-6 md:gap-x-[61px] xl:gap-x-[30px] xl:gap-y-[30px] mb-[20px] mm:mb-[40px]'>
+            {techList &&
+              techList.map(({currentClass, title}, index) => (
+                <li key={index} className='w-[100px] h-[100px] mm:w-[140px] mm:h-[140px] xl:w-[160px] xl:h-[160px]'>
+                  <CartSkill title={title} index={index}/>
+                </li>
+              ))}
           </ul>
-          <h3 className="font-condensed text-xl font-medium leading-6 mb-4 md:mb-[30px] md:leading-[38.4px] md:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Soft Skills</h3>
-          <ul className={`${s.parent_soft} mb-[20px] md:mb-0`}>
+          <h3 className="font-condensed text-xl font-medium leading-6 mb-4 mm:mb-[30px] mm:leading-[38.4px] mm:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Soft Skills</h3>
+          {/* <ul className={`${s.parent_soft} mb-[20px] md:mb-0`}>
             {softList &&
               softList.map(({currentClass, title}, index) => (
                 <li key={index} className={currentClass}>
                   <CartSkill title={title} index={index}/>
                 </li>
               ))}
+          </ul> */}
+          <ul className='w-full xl:w-[930px] flex flex-wrap gap-x-[29px] gap-y-2 mm:gap-x-[34px] mm:gap-y-6 md:gap-x-[61px] xl:gap-x-[30px] xl:gap-y-[30px] mb-[20px] mm:mb-[40px]'>
+            {softList &&
+              softList.map(({currentClass, title}, index) => (
+                <li key={index} className='w-[100px] h-[100px] mm:w-[140px] mm:h-[140px] xl:w-[160px] xl:h-[160px]'>
+                  <CartSkill title={title} index={index}/>
+                </li>
+              ))}
           </ul>
-          <div className="block md:w-[368px] md:h-[274px] xl:w-[633px] xl:h-[454px] md:absolute md:right-0 md:bottom-[20%] xl:-bottom-[90px]">
+          {/* <div className="block md:w-[368px] md:h-[274px] xl:w-[633px] xl:h-[454px] md:absolute md:right-0 md:bottom-[20%] xl:-bottom-[90px]">
               <Image src={letsworkPhoto} alt="Let`s work together" width={633} height={454} 
                 className="object-cover" 
               /> 
-            </div>
+            </div> */}
       </div>
       </div>
     </section>
