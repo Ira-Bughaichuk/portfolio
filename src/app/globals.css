@@ -51,9 +51,7 @@ footer {
     #875531 88.73%
   );
 }
-.nav-gradient{
-  background: linear-gradient(112deg, rgba(233, 161, 107, 0.70) 0.63%, rgba(240, 228, 215, 0.70) 59.11%, rgba(249, 219, 197, 0.70) 100%, rgba(251, 252, 217, 0.70) 100%)
-}
+
 .contacts-gradient {
   background: linear-gradient(
     112deg,

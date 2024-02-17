@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Navbar from './../../components/Navbar/Navbar';
 import Logo from './../../components/Logo/Logo';
 import MenuOverlay from './../../components/MenuOverlay/MenuOverlay';
@@ -8,21 +8,7 @@ import ButtonNav from './../../components/ButtonNav/ButtonNav';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  // useEffect(() => {
-  //   if (isOpen) {
-  //     document.body.classList.add('lock');
-  //   } else {
-  //     document.body.classList.remove('lock');
-  //   }
-
-  //   return () => {
-  //     document.body.classList.remove('lock');
-  //   };
-  // }, [isOpen]);
-
-  // const handlerToggle = ()=>{
-  //   setIsOpen(!isOpen);
-  // }
+  
   const handlerToggle =()=>{
     setIsOpen(!isOpen);
     const body = document.body;

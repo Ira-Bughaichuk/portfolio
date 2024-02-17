@@ -1,6 +1,7 @@
 export type NavLink = {
   title: string;
   path: string;
+ 
 };
 export type SkillsList = {
   tech: Skill[];
@@ -43,6 +44,7 @@ export type Offer = {
 export type INavLinkProps = {
   title: string;
   path: string;
+  handlerToggle? : ()=>void;
 };
 export type ITitleProps = {
   title: string;
