@@ -10,7 +10,7 @@ export type IMenuOverlayProps = {
 };
 export default function MenuOverlay({ open, handlerToggle }: IMenuOverlayProps) {
   return (
-    <div className={`fixed z-20 top-0 left-0 duration-500 transition ease-in-out ${open ? "left-0" : "left-[-100%]"} w-full h-full navigation-gradient overflow-y-auto`}>
+    <div className={`fixed z-20 top-0 left-0 duration-1000 transition ease-in-out ${open ? "left-0" : "left-[-100%]"} w-full h-full navigation-gradient overflow-y-auto`}>
         <div className="absolute top-4 right-4 mm:top-5 mm:right-5">
         <ButtonNav handlerToggle={handlerToggle} open={open} />
         </div>
@@ -19,7 +19,7 @@ export default function MenuOverlay({ open, handlerToggle }: IMenuOverlayProps) 
       <div className="flex flex-col mm:flex-row-reverse gap-[30px] mm:gap-[62px]">
         <div className="flex flex-col gap-[30px]">
           <Logo />
-          <h2 className="mm:w-[325px] text-4xl not-italic font-medium leading-[43.2px] mm:text-5xl mm:leading-[57.6px] xl:text-8xl xl:leading-[115.2px] text-color-secondary">
+          <h2 className="max-w-[325px] text-4xl not-italic font-medium leading-[43.2px] mm:text-5xl mm:leading-[57.6px] xl:text-8xl xl:leading-[115.2px] text-color-secondary">
             Frontend <span className="w-full flex justify-end">Developer</span>
           </h2>
         </div>

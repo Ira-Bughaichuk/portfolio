@@ -14,7 +14,7 @@ export default function ButtonNav({ handlerToggle, open }: IButtonNavProps) {
           after:left-[50%] after:transform after:-translate-x-1/2  after:-translate-y-1/2  
           before:content-[''] before:block before:absolute before:w-6 before:h-[1px] before:bg-color-btn-primary
           before:left-[50%] before:-translate-x-1/2 before:-translate-y-1/2
-          ${open ? "after:rotate-0 after:bottom-1 before:top-1 before:rotate-0" : "after:top[50%] after:rotate-45 after:-translate-y-1/2  before:-translate-y-1/2 before:top-[50%] before:-rotate-45"} `}
+          ${open ? "after:top[50%] after:rotate-45 after:-translate-y-1/2  before:-translate-y-1/2 before:top-[50%] before:-rotate-45" :  "after:rotate-0 after:bottom-1 before:top-1 before:rotate-0"} `}
       ></div>
     </button>
   );
