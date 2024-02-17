@@ -36,7 +36,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <Logo />
           <Navbar />
-          <div className='block xl:hidden'>
+          <div className='block md:hidden'>
           { !isOpen ?  <ButtonNav handlerToggle={handlerToggle} open={isOpen} /> : null}
           </div>
         </div>

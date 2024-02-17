@@ -7,7 +7,7 @@ export default function Contacts() {
   return (
     <section className="section">
         <div className="container mx-auto">
-        <Title title={"What I Offer"} />
+        <Title title={"Contacts"} />
         <div className='flex flex-col gap-[30px] mm:gap-[40px]'>
             <ContactsInfo />
             <div className='flex flex-col items-center font-condensed'>
