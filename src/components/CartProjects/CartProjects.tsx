@@ -2,6 +2,8 @@ import { url } from "inspector";
 import Image from "next/image";
 import phonebook from '../../../public/images/phonebook.jpg';
 import Buttons from "../Buttons/Buttons";
+import GitHub from '../../../public/icons/github.svg';
+import Arrow from '../../../public/icons/arrow.svg';
 
 export type ICartProjectsProps = {
   item:{
@@ -44,9 +46,9 @@ export default function CartProjects({item}:ICartProjectsProps) {
           </div>
           
           
-          <div className="relative z-30 flex justify-center gap-2 xl:gap-4 xl:justify-end">
-              <Buttons title={'GitHub'} icon={'ic'} path={'/'} />
-              <Buttons title={'See more'} icon={'ic'} path={'/'}/>
+          <div className="relative z-30 flex justify-center gap-2 xl:gap-4 xl:justify-end transition duration-500 ease-in-out text-color-btn-primary">
+              <Buttons title={'GitHub'} path={'/'}><GitHub width={20} height={20} className='w-[16px] h-[16px] xl:w-[20px] xl:h-[20px] hover:text-color-btn-extra focus:text-color-btn-secondary'/></Buttons>
+              <Buttons title={'See more'} path={'/'}><Arrow width={16} height={16}/></Buttons>
           </div>
         </div>
     </div>

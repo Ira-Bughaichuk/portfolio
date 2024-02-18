@@ -11,8 +11,6 @@ import Contacts from './../sections/Contacts/Contacts';
 
 export default function Home() {
   return (
-    <div className="wrapper">
-      <Header />
       <main className="page">
         <Hero />
         <About />
@@ -23,8 +21,6 @@ export default function Home() {
         <Languages />
         <Contacts />
       </main>
-      <Footer />
-    </div>
   );
 }
 

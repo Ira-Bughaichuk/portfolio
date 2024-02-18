@@ -1,4 +1,7 @@
+'use client';
 // import { sendEmail }   from '../../app/api/send/route';
+import Square from '../../../public/icons/square.svg';
+import BtnPrimary from '../BtnPrimary/BtnPrimary';
 
 export default function FormContact() {
   // const sendData = async (formData)=>{
@@ -6,6 +9,10 @@ export default function FormContact() {
   //   const data = await formData.get('name');
   //   sendEmail(data)
   // }
+  const handleSubmit =()=>{
+    console.log('click');
+    
+  }
   return (
     <form>
       <input name="name" type="text" required placeholder="Enter Your name" />
@@ -13,7 +20,7 @@ export default function FormContact() {
       <input name="email" type="email" required placeholder="Enter E-mail" />
       <input name="phone" type="number" required placeholder="Enter Phone number" />
       <textarea name="description" required placeholder="Enter project Description"></textarea>
-      <button type="submit" className="font-roboto text-color-secondary px-5 py-4 w-full flex gap-4 md:w-[198px] xl:w-[281px] xl:px-[40px] xl:gap-[26px] justify-center  bg-color-btn-primary outline-none border-none rounded-[8px] text-xl font-bold leading-6 xl:text-2xl xl:leading-[28.8px]">Submit order</button>
+      <BtnPrimary title={'Submit order'}  typeBtn={'submit'} onClick={handleSubmit}><Square width={24} height={24} /></BtnPrimary>
     </form>
   );
 }

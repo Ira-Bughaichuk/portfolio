@@ -47,11 +47,6 @@ export default function Skills() {
                 </li>
               ))}
           </ul>
-          {/* <div className="block md:w-[368px] md:h-[274px] xl:w-[633px] xl:h-[454px] md:absolute md:right-0 md:bottom-[20%] xl:-bottom-[90px]">
-              <Image src={letsworkPhoto} alt="Let`s work together" width={633} height={454} 
-                className="object-cover" 
-              /> 
-            </div> */}
       </div>
       </div>
     </section>

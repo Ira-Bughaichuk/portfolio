@@ -1,8 +1,13 @@
+'use client';
 import Image from "next/image";
 import profileMe from "../../../public/images/hero.jpg";
 import Arrow from '../../../public/icons/arrow.svg';
+import BtnPrimary from "@/components/BtnPrimary/BtnPrimary";
 
 export default function Hero() {
+  const handleClick =()=>{
+    console.log('download'); 
+  }
   return (
     <section className="overflow-hidden hero-gradient w-full pt-[33px] pb-[40px] mm:pt-[40px] mm:pb-[80px] xl:pt-[25px] xl:pb-[50px]">
       <div className="container">
@@ -51,13 +56,11 @@ export default function Hero() {
               </p>
               </div>
             </div>
-            <button type="button" className="transition duration-500 ease-in-out hover:bg-color-btn-extra focus:bg-color-btn-extra font-roboto px-5 py-4 w-full flex items-center gap-4 mm:w-[250px] xl:w-[350px] xl:px-[40px] xl:gap-[26px] justify-center  bg-color-btn-primary outline-none border-none rounded-[8px] text-xl font-bold leading-6 xl:text-2xl xl:leading-[28.8px]">
-              DownLoad CV 
-              <Arrow width={24} height={24} className='w-4 h-4 xl:w-6 xl:h-6'/>
-            </button>
+            <BtnPrimary title={'DownLoad CV'} typeBtn={"button"} onClick={handleClick}><Arrow width={24} height={24} className='w-4 h-4 xl:w-6 xl:h-6'/></BtnPrimary>
           </div>
         </div>
         </div>
     </section>
   );
 }
+

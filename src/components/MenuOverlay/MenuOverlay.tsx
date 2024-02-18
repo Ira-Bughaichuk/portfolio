@@ -2,7 +2,7 @@ import ButtonNav from "../ButtonNav/ButtonNav";
 import { navLinks } from "./../../utils/Data/navLink";
 import NavLink from "./../NavLink/NavLink";
 import Logo from "./../Logo/Logo";
-import BtnDownLoad from "./../BtnDownLoad/BtnDownLoad";
+import BtnDownLoad from "../BtnPrimary/BtnPrimary";
 import Image from "next/image";
 import photoToNav from '../../../public/images/nav.png';
 export type IMenuOverlayProps = {

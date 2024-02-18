@@ -1,13 +1,11 @@
-import Socials from './../Socials/Socials';
 
 export default function ContactsInfo() {
   return (
-    <div className="flex flex-col gap-3 mm:flex-row mm:justify-between">
       <address>
-        <p className="font-roboto mb-3 mm:mb-4  text-[15px] leading-[18px] font-bold mm:text-2xl mm:leading-[28,8px] xl:text-4xl xl:leading-[43,2px]">
+        <p className="font-roboto not-italic mb-3 mm:mb-4 text-[15px] leading-[18px] font-bold mm:text-2xl mm:leading-[28,8px] xl:text-4xl xl:leading-[43,2px]">
           My contact:
         </p>
-        <ul className="flex mm:flex-col mm:gap-4 mm:items-start justify-between items-center font-condensed text-[15px] leading-[22,5px] font-normal mm:text-xl mm:leading-6 xl:text-2xl xl:leading-9">
+        <ul className="not-italic flex mm:flex-col mm:gap-4 mm:items-start justify-between items-center font-condensed text-[15px] leading-[22,5px] font-normal mm:text-xl mm:leading-6 xl:text-2xl xl:leading-9">
           <li className="flex flex-col gap-1 mm:flex-row mm:gap-4">
             <p>Phone:</p>
             <a
@@ -32,12 +30,5 @@ export default function ContactsInfo() {
           </li>
         </ul>
       </address>
-      <div className="flex justify-between items-center mm:flex-col mm:justify-between">
-        <p className="font-roboto text-[15px] font-bold leading-[18px] mm:text-2xl mm:leading-[28,8px] xl:text-4xl xl:leading-[43,2px]">
-          I'm on social networks:
-        </p>
-        <Socials />
-      </div>
-    </div>
   );
 }

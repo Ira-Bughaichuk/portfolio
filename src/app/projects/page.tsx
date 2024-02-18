@@ -4,6 +4,8 @@ import Title from '@/components/Title/Title';
 import  BtnProject  from '@/components/BtnProject/BtnProject';
 import CartProjects from '@/components/CartProjects/CartProjects';
 import { projectsList } from '@/utils/Data/projectsList';
+import Header from './../../sections/Header/Header';
+import Footer from './../../sections/Footer/Footer';
 
 
 export default function Page() {
@@ -17,21 +19,22 @@ export default function Page() {
   
     
     return (
-      <section className="section">
-          <div className="container mx-auto">
-              <Title title='My Projects'/>
-              <div className='flex gap-4 xl:gap-[30px] justify-end mb-4 xl:mb-[44px]'>
-                <BtnProject  onClick={handleTagChange} tag="All" isSelected={tag === "All"}/>
-                <BtnProject  onClick={handleTagChange} tag="Com" isSelected={tag === "Com"}/>
-                <BtnProject  onClick={handleTagChange} tag="Pet" isSelected={tag === "Pet"}/>
+        <main className="page">
+          <section className="section">
+              <div className="container mx-auto">
+                  <Title title='My Projects'/>
+                  <div className='flex gap-4 xl:gap-[30px] justify-end mb-4 xl:mb-[44px]'>
+                    <BtnProject  onClick={handleTagChange} tag="All" isSelected={tag === "All"}/>
+                    <BtnProject  onClick={handleTagChange} tag="Com" isSelected={tag === "Com"}/>
+                    <BtnProject  onClick={handleTagChange} tag="Pet" isSelected={tag === "Pet"}/>
+                  </div>
+                  <ul className='grid gap-[35px] md:grid-cols-2 md:gap-x-[24px] md:gap-y-[30px]'>
+                    {filteredProjects && filteredProjects.map((item,index) =>(
+                      <li key={index}><CartProjects item={item}/></li>
+                    ))}
+                  </ul>
               </div>
-              <ul className='grid gap-[35px] md:grid-cols-2 md:gap-x-[24px] md:gap-y-[30px]'>
-                {filteredProjects && filteredProjects.map((item,index) =>(
-                  <li key={index}><CartProjects item={item}/></li>
-                ))}
-              </ul>
-          </div>
-      </section>
-  
+          </section>
+        </main>
     )
 }
