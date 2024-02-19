@@ -1,0 +1,13 @@
+.input_item{
+    @apply block w-full  outline-none bg-transparent border-[1px] border-solid rounded-lg
+     border-color-accent-primary py-4 px-5 
+     placeholder:text-[14px] placeholder:leading-[21px] placeholder:text-color-accent-secondary placeholder:mm:text-lg placeholder:mm:leading-[27px] font-normal not-italic
+     font-condensed text-[14px] leading-[21px] text-color-primary mm:text-lg mm:leading-[27px];
+}
+
+.textarea_item{
+    @apply resize-none block w-full xl:w-[648px] outline-none bg-transparent border-[1px] border-solid rounded-lg
+    border-color-accent-primary py-4 px-5 
+    placeholder:text-[14px] placeholder:leading-[21px] placeholder:text-color-accent-secondary placeholder:mm:text-lg placeholder:mm:leading-[27px] font-normal not-italic
+    font-condensed text-[14px] leading-[21px] text-color-primary mm:text-lg mm:leading-[27px];
+}
