@@ -1,3 +1,10 @@
+export type ProjectCart = {
+  projectTitle: string;
+  technologyTitle: string;
+  smallDescription: string;
+  titleImage: any; 
+
+}
 export type NavLink = {
   title: string;
   path: string;

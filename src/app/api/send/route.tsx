@@ -1,4 +1,4 @@
-'use server';
+// 'use server';
 
 // // import FormContact from '@/components/FormContact/FormContact';
 // import { Resend } from 'resend';

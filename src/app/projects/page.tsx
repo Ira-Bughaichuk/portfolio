@@ -4,11 +4,26 @@ import Title from '@/components/Title/Title';
 import  BtnProject  from '@/components/BtnProject/BtnProject';
 import CartProjects from '@/components/CartProjects/CartProjects';
 import { projectsList } from '@/utils/Data/projectsList';
-import Header from './../../sections/Header/Header';
-import Footer from './../../sections/Footer/Footer';
+// import { getData } from '../api/projects/route';
+import { ProjectCart } from '@/utils/types';
 
+// import { loadProjects } from '../api/projects/route';
 
-export default function Page() {
+///====v-1=====
+// export default async function Page() {
+//   const data:Data = await getData(0,1);
+export type Data = {
+  projects: ProjectCart[],
+  total: number
+}
+///====v-1=====
+
+///====v-2=====
+ export default function Page({ projects, total }: { projects: any, total: any }){
+  // const data: projectCart[] = await getData();
+  // console.log(initialProjects);
+  console.log("client repo", projects, total);
+  
     const [tag, setTag] = useState("All");
     const handleTagChange =(newTag:string)=>{
       setTag(newTag)
@@ -29,12 +44,25 @@ export default function Page() {
                     <BtnProject  onClick={handleTagChange} tag="Pet" isSelected={tag === "Pet"}/>
                   </div>
                   <ul className='grid gap-[35px] md:grid-cols-2 md:gap-x-[24px] md:gap-y-[30px]'>
-                    {filteredProjects && filteredProjects.map((item,index) =>(
+                    {/* {filteredProjects && filteredProjects.map((item,index) =>(
                       <li key={index}><CartProjects item={item}/></li>
-                    ))}
-                  </ul>
+                    ))} */}
+                    {/* {initialProjects && initialProjects.map((item,index) =>(
+                      <li key={index}><CartProjects item={item}/></li>
+                    ))}*/}
+                  </ul> 
               </div>
           </section>
         </main>
     )
 }
+
+// export const getServerSideProps = async() => {
+//   const {projects, total} = loadProjects(0, LOAD_MORE_STEP)
+//  return{
+//   props:{
+//     initialProjects:projects,
+//     total
+//   }
+//  }
+// }
