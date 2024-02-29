@@ -1,9 +1,9 @@
 export type ProjectCart = {
   projectTitle: string;
+  projectLink: string;
   technologyTitle: string;
   smallDescription: string;
   titleImage: any; 
-
 }
 export type NavLink = {
   title: string;

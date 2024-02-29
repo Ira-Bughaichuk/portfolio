@@ -1,6 +1,7 @@
-// import { createClient } from "next-sanity";
+import { createClient } from "next-sanity";
 import imageUrlBuilder from '@sanity/image-url'
-import {createClient} from '@sanity/client';
+// import {createClient} from '@sanity/client';
+// token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
 
 export const clientConfig ={
     projectId:'smviqyd2',
@@ -11,7 +12,6 @@ export const client = createClient({
     dataset: clientConfig.dataset,
     useCdn: true,
     apiVersion: '2024-02-22',
-    // token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
     ignoreBrowserTokenWarning: true,
 })
 
@@ -20,17 +20,6 @@ const builder = imageUrlBuilder(client);
 export function urlFor(source:any) {
   return builder.image(source);
 }
-// export const client = createClient({
-//     apiVersion: '2024-02-22',
-//     dataset: 'production',
-//     projectId:'smviqyd2',
-//     useCdn: false,
-// });
-// const builder = ImageUrlBuilder(client);
-
-// export function urlFor(source:any){
-//     return builder.image(source);
-// }
 
 
 

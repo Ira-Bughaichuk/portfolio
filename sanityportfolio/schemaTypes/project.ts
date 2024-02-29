@@ -24,6 +24,11 @@ export default {
         title: 'Small Description',
       },
       {
+        name: 'projectLink',
+        type: 'string',
+        title: 'Link of project'
+      },
+      {
         name: 'titleImage',
         type: 'image',
         title: 'Title Image',
