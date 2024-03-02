@@ -2,14 +2,19 @@ import ButtonNav from "../ButtonNav/ButtonNav";
 import { navLinks } from "./../../utils/Data/navLink";
 import NavLink from "./../NavLink/NavLink";
 import Logo from "./../Logo/Logo";
-import BtnDownLoad from "../BtnPrimary/BtnPrimary";
 import Image from "next/image";
 import photoToNav from '../../../public/images/nav.png';
+import  BtnPrimary  from '@/components/BtnPrimary/BtnPrimary';
+import Arrow from '../../../public/icons/arrow.svg';
+
 export type IMenuOverlayProps = {
   open:boolean;
   handlerToggle: () => void;
 };
 export default function MenuOverlay({ open, handlerToggle }: IMenuOverlayProps) {
+  const handleClick =()=>{
+    console.log('download'); 
+  }
   return (
     <div className={`fixed z-20 top-0 left-0 duration-1000 transition ease-in-out ${open ? "left-0" : "left-[-100%]"} w-full h-full navigation-gradient overflow-y-auto`}>
         <div className="absolute top-4 right-4 mm:top-5 mm:right-5">
@@ -39,7 +44,7 @@ export default function MenuOverlay({ open, handlerToggle }: IMenuOverlayProps) 
               ))}
             </ul>
           </nav>
-          <BtnDownLoad />
+          <BtnPrimary title={'DownLoad CV'} typeBtn={"button"} onClick={handleClick}><Arrow width={24} height={24} className='w-4 h-4 xl:w-6 xl:h-6'/></BtnPrimary>
         </div>
       </div>
       </div>

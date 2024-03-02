@@ -14,6 +14,11 @@ export default {
         title: 'Title of project'
       },
       {
+        name: 'mainTechnology',
+        type: 'string',
+        title: 'Main Technology Title'
+      },
+      {
         name: 'technologyTitle',
         type: 'string',
         title: 'Technology Title'
@@ -47,6 +52,33 @@ export default {
         //     title: 'Attribution',
         //   },
         // ]
+      },
+      {
+        name: 'tag',
+        type: 'array',
+        title: 'Tag Projects',
+        of: [{type: 'string'}]
+        // of: [
+        //   {
+        //     name: 'tagProject',
+        //     type: 'string',
+        //     title: 'Tag-1 Projects',
+        //   },
+        //   {
+        //     name: 'tagProject',
+        //     type: 'string',
+        //     title: 'Tag-2 Projects',
+        //   }
+        // ]
+        
+      },
+      {
+        name: 'category',
+        type: 'reference',
+        title: 'Project Category',
+        to: [{
+            type:'category',
+        },]
       },
 
     ]

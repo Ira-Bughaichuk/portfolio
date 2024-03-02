@@ -18,18 +18,22 @@ export type ICartProjectsProps = {
   //       tag: string[];
   // }
   item:{
+    _id:string;
     projectTitle: string;
+    mainTechnology:string;
     projectLink: string;
     technologyTitle: string;
     smallDescription: string;
+    category:string;
     titleImage: any; 
+    tag: string[];
   }
 }
 
 
 export default function CartProjects({item}:ICartProjectsProps) {
   // const {id, title, subTitle,description, image, pathToGitHub, pathToLivePage, tag} = item;
-  const {projectTitle,projectLink, technologyTitle, smallDescription, titleImage}=item;
+  const {_id, projectTitle,mainTechnology, projectLink, technologyTitle, smallDescription,category, titleImage, tag}=item;
   return (
     <div className="group">
     <div className=" h-full group-hover:bg-gradient-to-r from-[#e9a16b] from-[4.61%] via-[rgba(254, 226, 205, 0.6)] via-[48.56%] to-[rgba(254, 255, 193, 0.4)] to-[88.73%]

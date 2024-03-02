@@ -12,7 +12,7 @@ export const client = createClient({
     dataset: clientConfig.dataset,
     useCdn: true,
     apiVersion: '2024-02-22',
-    ignoreBrowserTokenWarning: true,
+    // ignoreBrowserTokenWarning: true,
 })
 
 const builder = imageUrlBuilder(client);
