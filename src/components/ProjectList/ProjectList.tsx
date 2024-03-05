@@ -9,7 +9,7 @@ export type IProjectListProps = {
     total: number
 }
 
-// const LOAD_MORE_STEP:number = 2;
+const LOAD_MORE_STEP:number = 2;
 export default function ProjectList({projectList, total}:IProjectListProps) {
     // const [projects, setProjects] = useState<ProjectCart[]>(projectList);
     // const [loadedAmount, setLoadedAmount] = useState<number>(LOAD_MORE_STEP);
@@ -37,9 +37,9 @@ export default function ProjectList({projectList, total}:IProjectListProps) {
     // const getMoreProjects = async () => {
     //   setLoading(true);
     //   try {
-    //     const response = await fetch(`api/projects/route/projects?start=${loadedAmount}&end=${loadedAmount + LOAD_MORE_STEP}`);
+    //     const response = await fetch(`http://localhost:3333?start=${loadedAmount}&end=${loadedAmount + LOAD_MORE_STEP}`);
     //     const data = await response.json();
-    //     console.log('ProjectList', data);
+    //     console.log('datadata', data);
     
     //     setLoadedAmount(loadedAmount + LOAD_MORE_STEP);
     //     setProjects([...projects, ...data.projects]);

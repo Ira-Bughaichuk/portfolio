@@ -12,6 +12,7 @@ export type IMenuOverlayProps = {
   handlerToggle: () => void;
 };
 export default function MenuOverlay({ open, handlerToggle }: IMenuOverlayProps) {
+
   const handleClick =()=>{
     console.log('download'); 
   }

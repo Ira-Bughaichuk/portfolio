@@ -1,13 +1,19 @@
 'use client';
 
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Navbar from './../../components/Navbar/Navbar';
 import Logo from './../../components/Logo/Logo';
 import MenuOverlay from './../../components/MenuOverlay/MenuOverlay';
 import ButtonNav from './../../components/ButtonNav/ButtonNav';
 
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const pathname: string = usePathname();
+  
+  const isActive = pathname === '/' ? 'bg-color-bg-primary' : 'hero-gradient';
+  const isActiveText = pathname === '/' ? 'text-color-accent-primary' : 'text-color-secondary';
   
   const handlerToggle =()=>{
     setIsOpen(!isOpen);
@@ -17,7 +23,7 @@ export default function Header() {
   }
 
   return (
-    <header>
+    <header className={`${isActive}`}>
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Logo />

@@ -29,7 +29,7 @@ export type ICartProjectsProps = {
     tag: string[];
   }
 }
-
+// w-[300px] xl:w-[500px]
 
 export default function CartProjects({item}:ICartProjectsProps) {
   // const {id, title, subTitle,description, image, pathToGitHub, pathToLivePage, tag} = item;
@@ -38,9 +38,9 @@ export default function CartProjects({item}:ICartProjectsProps) {
     <div className="group">
     <div className=" h-full group-hover:bg-gradient-to-r from-[#e9a16b] from-[4.61%] via-[rgba(254, 226, 205, 0.6)] via-[48.56%] to-[rgba(254, 255, 193, 0.4)] to-[88.73%]
      flex flex-col gap-4 items-center xl:gap-[30px] px-4 py-4 xl:px-[40px] xl:py-[40px] rounded-[10px] overflow-hidden border-[1px] border-solid border-color-btn-extra">
-        <div className="relative w-[300px] h-[180px] xl:w-[500px] xl:h-[400px] rounded-[10px] ">
+        <div className="relative w-[300px] h-[180px] xl:w-[500px] xl:h-[400px] rounded-[10px] flex justify-center">
           <Image src={urlFor(titleImage).url()} alt={projectTitle} width={500} height={400}
-          className="object-contain w-[300px] xl:w-[500px] rounded-[10px] overflow-hidden
+          className="object-contain w-auto h-full rounded-[10px] overflow-hidden
            absolute transform transition-all duration-500 opacity-100 scale-y-100 group-hover:scale-y-90 scale-x-100 group-hover:scale-x-110" />
         </div>
         {/* <Image src={image} alt={title} width={500} height={400}

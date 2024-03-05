@@ -36,6 +36,7 @@ export default function Hero() {
                 alt="Iryna Buhaichuk"
                 width={497}
                 height={710}
+                priority
                 className="w-[240px] h-[343px] mm:w-[300px] mm:h-[428px] xl:w-[496px] xl:h-[709px] object-cover absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  rounded-full"
               />
             </div>
