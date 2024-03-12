@@ -15,7 +15,7 @@ export default function ProjectSwiper() {
     <>
       <Swiper
       className='swiper'
-      // loop={true}
+      grabCursor={true}
       speed={1500}
         modules={[ Pagination]}
         spaceBetween={16}
@@ -29,8 +29,8 @@ export default function ProjectSwiper() {
             spaceBetween: '24px',
             slidesPerView: '1.5'
           },
-          1320: {
-              slidesPerView: '2.5'
+          1440: { //1320
+              slidesPerView: '2.5' 
             },
       }}
       >

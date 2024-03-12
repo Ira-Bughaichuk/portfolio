@@ -40,7 +40,7 @@ export default function CartProjects({item}:ICartProjectsProps) {
      flex flex-col gap-4 items-center xl:gap-[30px] px-4 py-4 xl:px-[40px] xl:py-[40px] rounded-[10px] overflow-hidden border-[1px] border-solid border-color-btn-extra">
         <div className="relative w-[300px] h-[180px] xl:w-[500px] xl:h-[400px] rounded-[10px] flex justify-center">
           <Image src={urlFor(titleImage).url()} alt={projectTitle} width={500} height={400}
-          className="object-contain w-auto h-full rounded-[10px] overflow-hidden
+          className="object-contain w-auto h-full rounded-[10px] overflow-hidden 
            absolute transform transition-all duration-500 opacity-100 scale-y-100 group-hover:scale-y-90 scale-x-100 group-hover:scale-x-110" />
         </div>
         {/* <Image src={image} alt={title} width={500} height={400}
