@@ -14,18 +14,18 @@ export default function Skills() {
           <Title type="subTitle" title={"Tech Skills"} />
           <ul className='w-full xl:w-[930px] flex flex-wrap gap-x-[29px] gap-y-2 mm:gap-x-[34px] mm:gap-y-6 md:gap-x-[61px] xl:gap-x-[30px] xl:gap-y-[30px] mb-[20px] mm:mb-[40px]'>
             {techList &&
-              techList.map(({title}, index) => (
+              techList.map((item, index) => (
                 <li key={index} className='w-[100px] h-[100px] mm:w-[140px] mm:h-[140px] xl:w-[160px] xl:h-[160px]'>
-                  <CartSkill title={title} index={index}/>
+                  <CartSkill title={item} index={index}/>
                 </li>
               ))}
           </ul>
           <Title type="subTitle" title={"Soft Skills"} />
           <ul className='w-full xl:w-[930px] flex flex-wrap gap-x-[29px] gap-y-2 mm:gap-x-[34px] mm:gap-y-6 md:gap-x-[61px] xl:gap-x-[30px] xl:gap-y-[30px] mb-[20px] mm:mb-[40px]'>
             {softList &&
-              softList.map(({title}, index) => (
+              softList.map((item, index) => (
                 <li key={index} className='w-[100px] h-[100px] mm:w-[140px] mm:h-[140px] xl:w-[160px] xl:h-[160px]'>
-                  <CartSkill title={title} index={index}/>
+                  <CartSkill title={item} index={index}/>
                 </li>
               ))}
           </ul>

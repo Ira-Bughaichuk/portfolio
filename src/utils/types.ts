@@ -17,18 +17,12 @@ export type ProjectCart = {
 }
 export type NavLink = {
   title: string;
-  path: string;
- 
+  path: string; 
 };
 export type SkillsList = {
-  tech: Skill[];
-  soft: Skill[];
+  tech: string[];
+  soft: string[];
 };
-export type Skill = {
-  title: string;
-  currentClass: string;
-};
-
 export type EducationCart = {
   university: string;
   profession: string;
