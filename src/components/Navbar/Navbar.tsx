@@ -1,7 +1,5 @@
-
 import NavLink from "./../NavLink/NavLink";
 import { navLinks } from './../../utils/Data/navLink';
-
 
 export default function Navbar() {
   return (

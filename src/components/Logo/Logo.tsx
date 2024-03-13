@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-// text-color-accent-primary
+
 export default function Logo() {
   const pathname: string = usePathname();
   const isActive = pathname === '/' ? 'text-color-accent-primary' : 'text-color-secondary';

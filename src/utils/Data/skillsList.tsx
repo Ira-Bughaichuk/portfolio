@@ -16,9 +16,9 @@ export const skillsList: SkillsList = {
   soft: [
     { title: "Communicative", currentClass: "cart_soft1" },
     { title: "Persistence", currentClass: "cart_soft2" },
-    {
-      title: "Ability to work well both individually and in a team",
+    {title: "Ability to work well both individually and in a team",
       currentClass: "cart_soft3",
     },
   ],
 };
+  

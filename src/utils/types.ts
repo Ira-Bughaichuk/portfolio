@@ -1,3 +1,7 @@
+export type Data = {
+  projects: ProjectCart[],
+  total: number,
+}
 export type ProjectCart = {
   _id: string;
   projectTitle: string;
@@ -84,3 +88,55 @@ export type ICartSkillProps = {
   title:string,
   index: number,
 }
+export type ICartProjectsProps = {
+  item:{
+    projectTitle: string;
+    mainTechnology:string;
+    projectLink: string;
+    technologyTitle: string;
+    smallDescription: string;
+    category:string;
+    titleImage: any; 
+    tag: string[];
+    gitURL:string;
+    projectURL:string;
+  }
+}
+export type IBtnPrimaryProps ={
+  title:string;
+  typeBtn: 'submit' | 'button';
+  onClick: ()=> void;
+  children: React.ReactNode;
+}
+export type IBtnProjectProps = {
+  tag:string; 
+  onClick: (value:string) =>void; 
+  isSelected:boolean; 
+}
+export type IBtnToPageProps = {
+   path: string; 
+   title: string; 
+   children:React.ReactNode; 
+};
+export type IButtonNavProps = {
+  handlerToggle: () => void;
+  open: boolean;
+};
+export type IButtonsProps = {
+  title: string;
+  path: string;
+  children: React.ReactNode;
+}
+export type IMenuOverlayProps = {
+  open:boolean;
+  handlerToggle: () => void;
+};
+export type IProjectListProps = {
+  projectList: ProjectCart[],
+};
+export type IProjectSliderProps ={
+  framework: string;
+  title: string;
+  path: string;
+  subTitle: string;
+};

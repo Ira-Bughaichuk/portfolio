@@ -28,14 +28,3 @@ export default function Projects() {
     </section>
   )
 }
-
-/* <div className='flex gap-4 xl:gap-[30px] justify-end mb-4 xl:mb-[44px]'>
-              <BtnProject  onClick={handleTagChange} tag="All" isSelected={tag === "All"}/>
-              <BtnProject  onClick={handleTagChange} tag="Com" isSelected={tag === "Com"}/>
-              <BtnProject  onClick={handleTagChange} tag="Pet" isSelected={tag === "Pet"}/>
-            </div>
-            <ul className='grid gap-[35px] md:grid-cols-2 md:gap-x-[24px] md:gap-y-[30px]'>
-              {filteredProjects && filteredProjects.map((item,index) =>(
-                <li key={index}><CartProjects item={item}/></li>
-              ))}
-            </ul>  */

@@ -1,5 +1,4 @@
-
-export type IBtnProjectProps ={tag:string; onClick: (value:string) =>void; isSelected:boolean; }
+import { IBtnProjectProps } from "@/utils/types"
 
 export default function BtnProject({tag,onClick, isSelected}:IBtnProjectProps) {
     const buttonStyle = isSelected ? "text-color-accent-primary" : "text-color-primary"

@@ -1,10 +1,6 @@
 import  Link  from 'next/link';
+import { IButtonsProps } from '@/utils/types';
 
-export type IButtonsProps = {
-  title: string;
-  path: string;
-  children: React.ReactNode;
-}
 export default function Buttons({title, path, children}: IButtonsProps) {
   return (
     <Link href={path} className='font-roboto w-full text-color-accent-primary border-[1px] border-solid border-color-btn-primary 

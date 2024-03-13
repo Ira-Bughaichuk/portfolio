@@ -29,7 +29,7 @@ export default function ProjectSwiper() {
             spaceBetween: '24px',
             slidesPerView: '1.5'
           },
-          1440: { //1320
+          1440: { 
               slidesPerView: '2.5' 
             },
       }}

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Title from "./../../components/Title/Title";
 import Buttons  from './../../components/Buttons/Buttons';
 import about from "./../../../public/images/about.jpg";
-
 import Email from '../../../public/icons/email.svg';
 import GitHub from '../../../public/icons/github.svg';
 import Linkedin from '../../../public/icons/linkedIn.svg';

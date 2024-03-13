@@ -1,10 +1,6 @@
 'use client';
+import { IButtonNavProps } from '@/utils/types';
 import { usePathname } from 'next/navigation';
-
-export type IButtonNavProps = {
-  handlerToggle: () => void;
-  open: boolean;
-};
 
 export default function ButtonNav({ handlerToggle, open }: IButtonNavProps) {
 const pathname: string = usePathname();

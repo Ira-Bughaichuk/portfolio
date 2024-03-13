@@ -1,31 +1,15 @@
-
 import Image from "next/image";
+import { urlFor } from "@/lib/client";
+import { ICartProjectsProps } from "@/utils/types";
 import Buttons from "../Buttons/Buttons";
 import GitHub from '../../../public/icons/github.svg';
 import Arrow from '../../../public/icons/arrow.svg';
-import { urlFor } from "@/lib/client";
-
-export type ICartProjectsProps = {
-  item:{
-    _id:string;
-    projectTitle: string;
-    mainTechnology:string;
-    projectLink: string;
-    technologyTitle: string;
-    smallDescription: string;
-    category:string;
-    titleImage: any; 
-    tag: string[];
-    gitURL:string;
-    projectURL:string;
-  }
-}
 
 export default function CartProjects({item}:ICartProjectsProps) {
-  const {_id, projectTitle,mainTechnology, projectLink, technologyTitle, smallDescription,category, titleImage, tag, gitURL, projectURL}=item;
+  const { projectTitle,mainTechnology, projectLink, technologyTitle, smallDescription,category, titleImage, tag, gitURL, projectURL}=item;
   return (
     <div className="group">
-    <div className=" h-full group-hover:bg-gradient-to-r from-[#e9a16b] from-[4.61%] via-[rgba(254, 226, 205, 0.6)] via-[48.56%] to-[rgba(254, 255, 193, 0.4)] to-[88.73%]
+    <div className="h-full group-hover:bg-gradient-to-r from-[#e9a16b] from-[4.61%] via-[rgba(254, 226, 205, 0.6)] via-[48.56%] to-[rgba(254, 255, 193, 0.4)] to-[88.73%]
      flex flex-col gap-4 items-center xl:gap-[30px] px-4 py-4 xl:px-[40px] xl:py-[40px] rounded-[10px] overflow-hidden border-[1px] border-solid border-color-btn-extra">
         <div className="relative w-[300px] h-[180px] xl:w-[500px] xl:h-[400px] rounded-[10px] flex justify-center">
           <Image src={urlFor(titleImage).url()} alt={projectTitle} width={500} height={400}

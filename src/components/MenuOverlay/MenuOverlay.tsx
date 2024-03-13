@@ -1,16 +1,13 @@
+import Image from "next/image";
+import { IMenuOverlayProps } from "@/utils/types";
 import ButtonNav from "../ButtonNav/ButtonNav";
-import { navLinks } from "./../../utils/Data/navLink";
+import  BtnPrimary  from '@/components/BtnPrimary/BtnPrimary';
 import NavLink from "./../NavLink/NavLink";
 import Logo from "./../Logo/Logo";
-import Image from "next/image";
+import { navLinks } from "./../../utils/Data/navLink";
 import photoToNav from '../../../public/images/nav.png';
-import  BtnPrimary  from '@/components/BtnPrimary/BtnPrimary';
 import Arrow from '../../../public/icons/arrow.svg';
 
-export type IMenuOverlayProps = {
-  open:boolean;
-  handlerToggle: () => void;
-};
 export default function MenuOverlay({ open, handlerToggle }: IMenuOverlayProps) {
 
   const handleClick =()=>{

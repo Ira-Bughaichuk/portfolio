@@ -1,8 +1,6 @@
-import { ICartEducationProps } from "@/utils/types";
 import Link from "next/link";
-
-
-  
+import { ICartEducationProps } from "@/utils/types";
+ 
 export default function CartEducation( {university, profession, data, path } : ICartEducationProps) {
   return (
     <div className='font-condensed w-full h-full pb-[6px] mm:pb-3 md:pb-3  bg-color-btn-primary rounded-[10px]'>
