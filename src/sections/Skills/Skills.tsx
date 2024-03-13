@@ -10,9 +10,10 @@ export default function Skills() {
   return (
     <section className="py-[40px] md:py-[50px] xl:pt-[80px] xl:pb-[170px]">
       <div className="container mx-auto">
-        <Title title={"My skills"} />
+        {/* <Title type="subTitle" title={"My skills"} /> */}
         <div className="relative">
-          <h3 className="font-condensed text-xl font-medium leading-6 mb-4 mm:mb-[30px] mm:leading-[38.4px] mm:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Tech Skills</h3>
+          <Title type="subTitle" title={"Tech Skills"} />
+          {/* <h3 className="font-condensed text-xl font-medium leading-6 mb-4 mm:mb-[30px] mm:leading-[38.4px] mm:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Tech Skills</h3> */}
            {/* <ul className={`${s.parent_tech} mb-[20px] md:mb-[40px]`}>
             {techList &&
               techList.map(({currentClass, title}, index) => (
@@ -30,7 +31,8 @@ export default function Skills() {
                 </li>
               ))}
           </ul>
-          <h3 className="font-condensed text-xl font-medium leading-6 mb-4 mm:mb-[30px] mm:leading-[38.4px] mm:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Soft Skills</h3>
+          <Title type="subTitle" title={"Soft Skills"} />
+          {/* <h3 className="font-condensed text-xl font-medium leading-6 mb-4 mm:mb-[30px] mm:leading-[38.4px] mm:text-[32px] xl:leading-[43.2px] xl:text-[36px]">Soft Skills</h3> */}
           {/* <ul className={`${s.parent_soft} mb-[20px] md:mb-0`}>
             {softList &&
               softList.map(({currentClass, title}, index) => (

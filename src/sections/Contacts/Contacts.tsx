@@ -8,7 +8,7 @@ export default function Contacts() {
   return (
     <section className="section">
         <div className="container mx-auto">
-        <Title title={"Contacts"} />
+        <Title type="main" title={"Contacts"} />
         <div className='flex flex-col gap-[30px] mm:gap-[40px]'>
             
             <div className="flex flex-col gap-3 mm:flex-row mm:justify-between">

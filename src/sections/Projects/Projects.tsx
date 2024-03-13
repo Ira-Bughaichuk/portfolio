@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <section className="section">
         <div className="container mx-auto">
-            <Title title='My Projects'/>
+            <Title type="main" title='My Projects'/>
             <div className='flex flex-col mm:flex-row gap-5 mm:gap-6 mm:items-center'>
               <div className='flex flex-col font-condensed'>
                 <p  className='mb-6  text-xl leading-6 font-medium xl:text-4xl xl:leading-[43.2px]'>Browse Through My Works</p>

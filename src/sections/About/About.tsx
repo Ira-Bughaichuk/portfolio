@@ -22,7 +22,7 @@ export default function About() {
               />
             </div>
           <div className="flex flex-col">
-            <Title title={'About me'}/>
+            <Title type="main" title={'About me'}/>
             <div className="font-condensed flex flex-col gap-5 mb-4 mm:mb-5 xl:mb-[60px]">
               <p className="text-[15] leading-[22.5px] mm:text-lg mm:leading-[27px] xl:leading-9 xl:text-2xl">
                 I am an experienced front-end developer with a focus on React.js

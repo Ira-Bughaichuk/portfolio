@@ -58,6 +58,7 @@ export type INavLinkProps = {
   handlerToggle? : ()=>void;
 };
 export type ITitleProps = {
+  type: string;
   title: string;
 };
 

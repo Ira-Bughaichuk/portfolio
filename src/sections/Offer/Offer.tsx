@@ -9,7 +9,7 @@ export default function Offer() {
   return (
     <section className="section">
       <div className="container mx-auto">
-        <Title title={"What I Offer"} />
+        <Title type="subTitle" title={"What I Offer"} />
         <ul className={` ${s.parent}`}>
           {offerList &&
             offerList.map(({ currentClass, title, description }, index) => (

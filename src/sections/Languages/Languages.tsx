@@ -8,7 +8,7 @@ export default function Languages() {
     <section className="section">
       <div className="container mx-auto">
         <div className="flex justify-center">
-        <Title title={'Languages'}/>
+        <Title type="subTitle" title={'Languages'}/>
         </div>
         
         <ul className="flex gap-4 mm:gap-6 justify-center">

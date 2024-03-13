@@ -22,7 +22,7 @@ export default async function Page() {
         <main className="page">
           <section className="section">
               <div className="container mx-auto">
-                  <Title title='My Projects'/>
+                  <Title type="main" title='My Projects'/>
                   <ProjectList projectList={data.projects} total={data.total}/>
               </div>
           </section>
