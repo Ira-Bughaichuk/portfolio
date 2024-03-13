@@ -8,6 +8,8 @@ export type ProjectCart = {
   category:string;
   titleImage: any; 
   tag: string[];
+  gitURL: string;
+  projectURL:string
 }
 export type NavLink = {
   title: string;

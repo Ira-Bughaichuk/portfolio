@@ -1,23 +1,17 @@
-
-import Title from '@/components/Title/Title';
-import  BtnProject  from '@/components/BtnProject/BtnProject';
-import CartProjects from '@/components/CartProjects/CartProjects';
-
-
-import { ProjectCart } from '@/utils/types';
 import { fetchProjects } from '../api/projects/route';
+import Title from '@/components/Title/Title';
+import { ProjectCart } from '@/utils/types';
 import ProjectList from '@/components/ProjectList/ProjectList';
 
 
 export type Data = {
   projects: ProjectCart[],
-  total: number
+  total: number,
 }
-const LOAD_MORE_STEP:number = 6;
+
 export default async function Page() {
-  const data:Data = await fetchProjects(0, LOAD_MORE_STEP);
-  console.log('data', data); 
-    
+  const data:Data = await fetchProjects();
+
     return (
         <main className="page">
           <section className="section">

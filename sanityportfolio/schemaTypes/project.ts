@@ -4,11 +4,6 @@ export default {
     title: 'Projects',
     fields: [
       {
-        name: 'metaTitle',
-        type: 'string',
-        title: 'Meta title'
-      },
-      {
         name: 'projectTitle',
         type: 'string',
         title: 'Title of project'
@@ -28,58 +23,39 @@ export default {
         type: 'text',
         title: 'Small Description',
       },
-      {
-        name: 'projectLink',
-        type: 'string',
-        title: 'Link of project'
-      },
+      // {
+      //   name: 'projectLink',
+      //   type: 'string',
+      //   title: 'Link of project'
+      // },
       {
         name: 'titleImage',
         type: 'image',
         title: 'Title Image',
-        // fields: [
-        //   {
-        //     name: 'caption', //alt
-        //     type: 'string',
-        //     title: 'Caption',
-        //     options:{
-        //       isHighlighted:true,
-        //     },
-        //   },
-        //   {
-        //     name: 'attribution',
-        //     type: 'string',
-        //     title: 'Attribution',
-        //   },
-        // ]
+        options: { hotspot: true },
+        fields: [
+          {
+            name: "alt",
+            title: "Alt",
+            type: "string"
+          }
+        ]
       },
       {
         name: 'tag',
         type: 'array',
         title: 'Tag Projects',
         of: [{type: 'string'}]
-        // of: [
-        //   {
-        //     name: 'tagProject',
-        //     type: 'string',
-        //     title: 'Tag-1 Projects',
-        //   },
-        //   {
-        //     name: 'tagProject',
-        //     type: 'string',
-        //     title: 'Tag-2 Projects',
-        //   }
-        // ]
-        
       },
       {
-        name: 'category',
-        type: 'reference',
-        title: 'Project Category',
-        to: [{
-            type:'category',
-        },]
+        name: "gitURL",
+        title: "GIT URL",
+        type: "url"
       },
-
+      {
+        name: "projectURL",
+        title: "Project URL",
+        type: "url"
+      },
     ]
   }
