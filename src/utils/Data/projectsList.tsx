@@ -1,8 +1,4 @@
 import { Project } from "../types";
-import carp from './../../../public/images/carp-travel.png';
-import kapustf from '../../../public/images/phonebook.jpg';
-import labrary from '../../../public/images/labrary.png';
-import mobileApp from '../../../public/images/mobile-app.png';
 
 export const projectsList: Project[] = [
   {
@@ -52,19 +48,3 @@ export const projectsList: Project[] = [
     tag: ["All", "Com"],
   },
 ];
-// {
-//     title:'',
-//     subTitle:'',
-//     description:"",
-//     image:"",
-//     pathToGitHub:"",
-//     pathToLivePage:"",
-// },
-// {
-//     title:'',
-//     subTitle:'',
-//     description:"",
-//     image:"",
-//     pathToGitHub:"",
-//     pathToLivePage:"",
-// }

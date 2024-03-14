@@ -10,7 +10,7 @@ export type ProjectCart = {
   technologyTitle: string;
   smallDescription: string;
   category:string;
-  titleImage: any; 
+  titleImage: string;  // 
   tag: string[];
   gitURL: string;
   projectURL:string
@@ -90,7 +90,7 @@ export type ICartProjectsProps = {
     technologyTitle: string;
     smallDescription: string;
     category:string;
-    titleImage: any; 
+    titleImage: string; // maybe SanityImageSource
     tag: string[];
     gitURL:string;
     projectURL:string;

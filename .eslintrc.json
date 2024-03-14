@@ -9,12 +9,7 @@
   "plugins": ["react"],
   "parser": "@typescript-eslint/parser",
   "rules": {
-    "prettier/prettier": [
-      "warn",
-      {
-        "endOfLine": "auto"
-      }
-    ]
+    "no-undef": "off"
   },
   "root": true
 }

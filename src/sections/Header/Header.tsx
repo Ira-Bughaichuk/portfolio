@@ -13,7 +13,7 @@ export default function Header() {
   const pathname: string = usePathname();
   
   const isActive = pathname === '/' ? 'bg-color-bg-primary' : 'hero-gradient';
-  const isActiveText = pathname === '/' ? 'text-color-accent-primary' : 'text-color-secondary';
+  // const isActiveText = pathname === '/' ? 'text-color-accent-primary' : 'text-color-secondary';
   
   const handlerToggle =()=>{
     setIsOpen(!isOpen);
