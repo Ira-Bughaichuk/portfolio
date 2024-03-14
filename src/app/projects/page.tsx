@@ -5,7 +5,6 @@ import ProjectList from '@/components/ProjectList/ProjectList';
 
 export default async function Page() {
   const data:Data = await fetchProjects();
-console.log("daat", data);
 
     return (
         <main className="page">

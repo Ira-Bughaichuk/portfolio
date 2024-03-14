@@ -22,8 +22,13 @@ export default function Page() {
                 <FormContact />
                 <div className="flex flex-col gap-5 mm:flex-row-reverse mm:gap-0 mm:justify-between">
                   <div className="w-[358px] h-[249px] mm:w-[368px] mm:h-[254px] md:h-[270px] xl:w-[632px] xl:h-[423px]">
-                    <Image src={letsworkPhoto} alt="Let`s work together" width={633} height={454} 
-                      className="object-cover" /> 
+                    <Image src={letsworkPhoto} 
+                            alt="Let`s work together" 
+                            width={633}
+                            height={454}
+                            loading="lazy"  
+                            className="object-cover" 
+                      /> 
                   </div>
                   <div className="flex flex-col mm:justify-between">
                     <ContactsInfo />

@@ -15,6 +15,7 @@ export default function About() {
               <Image
                 src={about}
                 alt="Photo Iryna"
+                loading="lazy" 
                 width={400}
                 height={600}
                 className="object-cover w-full h-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  rounded-full"
@@ -36,9 +37,9 @@ export default function About() {
               </p>
             </div>
             <ul className="flex flex-col mm:flex-row mm:justify-between xl:justify-start gap-2 xl:gap-[30px]">
-                <li><Buttons title={'Send an e-mail'} path={"mailto:irynabugaichuk7@gmail.com"}><Email width={20} height={20} className='w-[14px] h-[14px] mm:w-[18px] mm:h-[18px]  xl:w-[20px] xl:h-[20px]'/></Buttons></li>
-                <li><Buttons title={'Linkedin'} path={'https://www.linkedin.com/feed/'}><Linkedin width={20} height={20} className='w-[12px] h-[12px] mm:w-[16px] mm:h-[16px] xl:w-[20px] xl:h-[20px]'/></Buttons></li>
-                <li><Buttons title={'GitHub'} path={'https://github.com/Ira-Bughaichuk'}><GitHub width={20} height={20}  className='w-[12px] h-[12px] mm:w-[16px] mm:h-[16px] xl:w-[20px] xl:h-[20px]'/></Buttons></li>
+                <li><Buttons title={'Send an e-mail'} path={"mailto:irynabugaichuk7@gmail.com"}><Email width={20} height={20} aria-label="Email" className='w-[14px] h-[14px] mm:w-[18px] mm:h-[18px]  xl:w-[20px] xl:h-[20px]'/></Buttons></li>
+                <li><Buttons title={'Linkedin'} path={'https://www.linkedin.com/feed/'}><Linkedin width={20} height={20} aria-label="Linkedin" className='w-[12px] h-[12px] mm:w-[16px] mm:h-[16px] xl:w-[20px] xl:h-[20px]'/></Buttons></li>
+                <li><Buttons title={'GitHub'} path={'https://github.com/Ira-Bughaichuk'}><GitHub width={20} height={20} aria-label="GitHub" className='w-[12px] h-[12px] mm:w-[16px] mm:h-[16px] xl:w-[20px] xl:h-[20px]'/></Buttons></li>
               </ul>
           </div>
         </div>

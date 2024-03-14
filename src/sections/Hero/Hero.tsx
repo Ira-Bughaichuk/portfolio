@@ -57,7 +57,7 @@ export default function Hero() {
               </p>
               </div>
             </div>
-            <BtnPrimary title={'DownLoad CV'} typeBtn={"button"} onClick={handleClick}><Arrow width={24} height={24} className='w-4 h-4 xl:w-6 xl:h-6'/></BtnPrimary>
+            <BtnPrimary title={'DownLoad CV'} typeBtn={"button"} onClick={handleClick}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnPrimary>
           </div>
         </div>
         </div>

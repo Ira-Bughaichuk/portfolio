@@ -14,13 +14,13 @@ export default function Projects() {
                 <p  className='mb-6  text-xl leading-6 font-medium xl:text-4xl xl:leading-[43.2px]'>Browse Through My Works</p>
                 <p className='mm:w-[320px] md:w-[365px] xl:w-[536px] mm:mb-10 text-[15px] leading-[22.5px] mm:text-[18px] mm:leading-[27px] xl:text-2xl xl:leading-9 font-normal'>Dive into my portfolio to explore a collection of projects showcasing meticulous implementation and thoughtful design.</p>
                 <div className='hidden mm:block'>
-                  <BtnToPage path={'/projects'} title={"All projects"}><Arrow width={24} height={24} className='w-[22px] h-[22px] xl:w-[24px] xl:h-[24px]'/> </BtnToPage>
+                  <BtnToPage path={'/projects'} title={"All projects"}><Arrow width={24} height={24} aria-label="Arrow" className='w-[22px] h-[22px] xl:w-[24px] xl:h-[24px]'/></BtnToPage>
                 </div>
               </div>
               <div className='flex flex-col gap-[18px] xl:gap-6'>
                 <ProjectSwiper />
                 <div className='mm:hidden block'>
-                  <BtnToPage path={'/projects'} title={"All projects"}><Arrow width={24} height={24} className='w-[22px] h-[22px] xl:w-[24px] xl:h-[24px]'/> </BtnToPage>
+                  <BtnToPage path={'/projects'} title={"All projects"}><Arrow width={24} height={24} aria-label="Arrow" className='w-[22px] h-[22px] xl:w-[24px] xl:h-[24px]'/></BtnToPage>
                 </div>
               </div>
             </div>

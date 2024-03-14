@@ -8,7 +8,7 @@ export default function NavLink({path, title, handlerToggle} : INavLinkProps) {
   const textPage = pathname === '/' ? 'text-color-accent-primary md:text-color-accent-primary': 'text-color-secondary';
   const isActive = pathname === path ?  'text-color-accent-primary' : textPage;
   return (
-    <button onClick={handlerToggle}>
+    <button type="button" onClick={handlerToggle}>
       <Link href={path}  className={`${isActive} text-xl font-medium leading-6 not-italic
       transition duration-500 ease-in-out hover:text-color-btn-secondary  md:hover:text-color-btn-secondary focus:text-color-btn-secondary hover:font-bold
        md:text-2xl md:text-color-text-primary md:font-normal`}>{title}</Link>

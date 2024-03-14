@@ -6,10 +6,11 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="font-roboto flex items-center justify-center gap-[10px] xl:gap-[20px] text-color-secondary mb-5 mm:mb-3 xl:mb-6 text-xl leading-6 font-bold mm:text-2xl mm:leading-[28.8px]">
             <Hash
-            width={24}
-            height={24}
-            className="w-5 h-5 mm:w-[24px] mm:h-[24px]"
-          />
+              width={24}
+              height={24}
+              aria-label="Hash"
+              className="w-5 h-5 mm:w-[24px] mm:h-[24px]"
+            />
           <p>Iryna Buhaichuk</p>
         </div>
         <div className='w-full flex justify-center'>

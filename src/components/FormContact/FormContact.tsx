@@ -26,7 +26,7 @@ export default function FormContact() {
         </div>
         <textarea className={s.textarea_item} name="description" required placeholder="Enter project Description"></textarea>
       </div>
-      <BtnPrimary title={'Submit order'}  typeBtn={'submit'} onClick={handleSubmit}><Square width={24} height={24} /></BtnPrimary>
+      <BtnPrimary title={'Submit order'}  typeBtn={'submit'} onClick={handleSubmit}><Square width={24} height={24} aria-label="Square"/></BtnPrimary>
     </form>
   );
 }

@@ -27,6 +27,7 @@ export default function Offer() {
               alt="Photo about offer"
               width={300}
               height={300}
+              loading="lazy" 
               className="object-contain w-[200px] h-[200px] md:w-[180px] md:h-[180px] xl:w-[299px] xl:h-[299px]"
             />
           </li>

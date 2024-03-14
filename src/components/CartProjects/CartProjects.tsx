@@ -6,8 +6,7 @@ import GitHub from '../../../public/icons/github.svg';
 import Arrow from '../../../public/icons/arrow.svg';
 
 export default function CartProjects({item}:ICartProjectsProps) {
-  console.log("item", item);
-  
+  // console.log("item", item);
   // const { projectTitle,mainTechnology, technologyTitle, smallDescription, titleImage, gitURL, projectURL}=item;
   return (
     <div className="group"> 
@@ -31,9 +30,9 @@ export default function CartProjects({item}:ICartProjectsProps) {
           </div>
           
           
-          <div className="relative z-30 flex justify-center gap-2 xl:gap-4 xl:justify-end transition duration-500 ease-in-out text-color-btn-primary">
-              <Buttons title={'GitHub'} path={item.gitURL}><GitHub width={20} height={20} className='w-[16px] h-[16px] xl:w-[20px] xl:h-[20px] hover:text-color-btn-extra focus:text-color-btn-secondary'/></Buttons>
-              <Buttons title={'See more'} path={item.projectURL}><Arrow width={16} height={16}/></Buttons>
+          <div className="relative z-20 flex justify-center gap-2 xl:gap-4 xl:justify-end transition duration-500 ease-in-out text-color-btn-primary">
+              <Buttons title={'GitHub'} path={item.gitURL}><GitHub width={20} height={20} aria-label="GitHub" className='w-[16px] h-[16px] xl:w-[20px] xl:h-[20px] hover:text-color-btn-extra focus:text-color-btn-secondary'/></Buttons>
+              <Buttons title={'See more'} path={item.projectURL}><Arrow width={24} height={24} aria-label="See Project" className='w-[16px] h-[16px] xl:w-[24px] xl:h-[24px] hover:text-color-btn-extra focus:text-color-btn-secondary'/></Buttons>
           </div>
         </div>
     </div>

@@ -9,6 +9,7 @@ export default function Title({type, title }: ITitleProps) {
           <Hash
             width={44}
             height={44}
+            aria-label="Hash" 
             className="w-[30px] h-[30px] mm:w-[36px] mm:h-[36px] xl:w-[44px] xl:h-[44px]"
           />
           {title}
@@ -22,6 +23,7 @@ export default function Title({type, title }: ITitleProps) {
           <Hash
             width={30}
             height={30}
+            aria-label="Hash" 
             className="w-[16px] h-[16px] mm:w-[24px] mm:h-[24px] xl:w-[30px] xl:h-[30px]"
           />
           {title}

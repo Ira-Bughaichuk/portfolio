@@ -14,7 +14,7 @@ export default function MenuOverlay({ open, handlerToggle }: IMenuOverlayProps) 
     console.log('download'); 
   }
   return (
-    <div className={`fixed z-20 top-0 left-0 duration-1000 transition ease-in-out ${open ? "left-0" : "left-[-100%]"} w-full h-full navigation-gradient overflow-y-auto`}>
+    <div className={`fixed z-30 top-0 left-0 duration-1000 transition ease-in-out ${open ? "left-0" : "left-[-100%]"} w-full h-full navigation-gradient overflow-y-auto`}>
         <div className="absolute top-4 right-4 mm:top-5 mm:right-5">
         <ButtonNav handlerToggle={handlerToggle} open={open} />
         </div>
