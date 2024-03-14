@@ -12,7 +12,7 @@ console.log("daat", data);
           <section className="section">
               <div className="container mx-auto">
                   <Title type="main" title='My Projects'/>
-                  <ProjectList projectList={data.projects}/>
+                  {data.projects && <ProjectList projectList={data.projects}/>}
               </div>
           </section>
         </main>
