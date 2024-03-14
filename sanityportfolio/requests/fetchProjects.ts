@@ -1,5 +1,4 @@
-'use server';
-import { client } from '@/lib/client';
+import { client } from "../client/client";
 
 export async function fetchProjects(){
   const query =`{
@@ -14,5 +13,3 @@ export async function fetchProjects(){
   const data = await client.fetch(query);
   return data;
 }
-
-

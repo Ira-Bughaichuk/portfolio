@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { urlFor } from "@/lib/client";
+import { urlFor } from "../../../sanityportfolio/client/client";
 import { ICartProjectsProps } from "@/utils/types";
 import Buttons from "../Buttons/Buttons";
 import GitHub from '../../../public/icons/github.svg';

@@ -1,4 +1,4 @@
-import { fetchProjects } from '../api/projects/route';
+import { fetchProjects } from '../../../sanityportfolio/requests/fetchProjects';
 import Title from '@/components/Title/Title';
 import { Data } from '@/utils/types';
 import ProjectList from '@/components/ProjectList/ProjectList';
