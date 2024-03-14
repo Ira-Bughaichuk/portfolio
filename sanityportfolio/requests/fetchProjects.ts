@@ -3,8 +3,7 @@ import { client } from "../client/client";
 export async function fetchProjects(){
   const query =`{
     "projects": *[_type == 'projects'] | order(_createdAt desc) {
-      _id, projectTitle, mainTechnology, projectLink, technologyTitle, smallDescription,
-      "category":category->name, 
+      _id, projectTitle, mainTechnology, technologyTitle, smallDescription,
       "titleImage":titleImage.asset -> url,
       tag, gitURL, projectURL
     }, 

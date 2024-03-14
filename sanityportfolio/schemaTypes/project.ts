@@ -23,11 +23,6 @@ export default {
         type: 'text',
         title: 'Small Description',
       },
-      // {
-      //   name: 'projectLink',
-      //   type: 'string',
-      //   title: 'Link of project'
-      // },
       {
         name: 'titleImage',
         type: 'image',
