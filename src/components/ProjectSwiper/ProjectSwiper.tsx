@@ -4,20 +4,19 @@ import { Pagination } from 'swiper/modules';
 
 import ProjectSlider from '../ProjectSlider/ProjectSlider';
 import { projectsList } from '@/utils/Data/projectsList';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './project.css';
 
-export default function ProjectSwiper() {
+export default function ProjectSwiper(){
   return (
 
     <>
       <Swiper
-      className='swiper'
-      grabCursor={true}
-      speed={1500}
-        modules={[ Pagination]}
+        className='swiper'
+        grabCursor={true}
+        speed={1500}
+         modules={[Pagination]}
         spaceBetween={16}
         slidesPerView={2}
         pagination={{
@@ -26,11 +25,11 @@ export default function ProjectSwiper() {
         }}
       breakpoints= {{
           744: {
-            spaceBetween: '24px',
-            slidesPerView: '1.5'
+            spaceBetween: 24,
+            slidesPerView: 1.5
           },
           1440: { 
-              slidesPerView: '2.5' 
+              slidesPerView: 2.5 
             },
       }}
       >
