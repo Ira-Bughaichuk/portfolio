@@ -86,10 +86,8 @@ export type ICartProjectsProps = {
   item:{
     projectTitle: string;
     mainTechnology:string;
-    projectLink: string;
-    technologyTitle: string;
+    technologyTitle: string; 
     smallDescription: string;
-    category:string;
     titleImage: string; // maybe SanityImageSource
     tag: string[];
     gitURL:string;
