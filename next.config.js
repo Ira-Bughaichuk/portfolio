@@ -35,6 +35,7 @@ module.exports = {
       },
     ],
   },
+ 
   //or
   // images: {
   //   domains: ["cdn.sanity.io"],

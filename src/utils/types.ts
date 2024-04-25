@@ -2,6 +2,13 @@ export type Data = {
   projects: ProjectCart[],
   total: number,
 }
+export type EmailFileProps = {
+  senderEmail: string;
+  message: string;
+  usernName: string;
+  companyName: string;
+  phone: string;
+};
 export type ProjectCart = {
   _id: string;
   projectTitle: string;
@@ -97,7 +104,8 @@ export type ICartProjectsProps = {
 export type IBtnPrimaryProps ={
   title:string;
   typeBtn: 'submit' | 'button';
-  onClick: ()=> void;
+  pending: boolean;
+  onClick?: ()=> void;
   children: React.ReactNode;
 }
 export type IBtnProjectProps = {
