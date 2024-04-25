@@ -2,12 +2,10 @@
 import Image from "next/image";
 import profileMe from "../../../public/images/hero.jpg";
 import Arrow from '../../../public/icons/arrow.svg';
-import BtnPrimary from "@/components/BtnPrimary/BtnPrimary";
+import BtnDownload from '@/components/BtnDownload/BtnDownload';
 
 export default function Hero() {
-  const handleClick =()=>{
-    console.log('download'); 
-  }
+
   return (
     <section className="overflow-hidden hero-gradient w-full pt-[33px] pb-[40px] mm:pt-[40px] mm:pb-[80px] xl:pt-[25px] xl:pb-[50px]">
       <div className="container">
@@ -57,7 +55,8 @@ export default function Hero() {
               </p>
               </div>
             </div>
-            <BtnPrimary title={'DownLoad CV'} typeBtn={"button"} onClick={handleClick}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnPrimary>
+            <BtnDownload title={'DownLoad CV'} path={'Iryna_Byghaichuk_front-3.pdf'}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnDownload>
+            {/* <BtnPrimary title={'DownLoad CV'} typeBtn={"button"} onClick={handleClick}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnPrimary> */}
           </div>
         </div>
         </div>

@@ -63,6 +63,8 @@ export type INavLinkProps = {
   title: string;
   path: string;
   handlerToggle? : ()=>void;
+  type?: string;
+
 };
 export type ITitleProps = {
   type: string;
@@ -104,8 +106,13 @@ export type ICartProjectsProps = {
 export type IBtnPrimaryProps ={
   title:string;
   typeBtn: 'submit' | 'button';
-  pending: boolean;
+  // pending: boolean;
   onClick?: ()=> void;
+  children: React.ReactNode;
+}
+export type IBtnDownloadProps = {
+  title:string;
+  path: string;
   children: React.ReactNode;
 }
 export type IBtnProjectProps = {
@@ -121,6 +128,7 @@ export type IBtnToPageProps = {
 export type IButtonNavProps = {
   handlerToggle: () => void;
   open: boolean;
+  type?: string;
 };
 export type IButtonsProps = {
   title: string;

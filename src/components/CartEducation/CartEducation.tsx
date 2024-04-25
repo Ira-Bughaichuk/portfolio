@@ -11,8 +11,10 @@ export default function CartEducation( {university, profession, data, path } : I
             <p>{data}</p>
         </div>
     </div>
-    <Link href={path} className="text-color-secondary transition duration-500 ease-in-out hover:text-color-accent-extra focus:text-color-accent-extra
-     text-[15px] leading-[18px] font-normal mm:font-medium mm:text-lg mm:leading-[21.6px] xl:text-xl xl:leading-6 xl:font-bold underline px-3 mm:px-[22px] xl:px-2 pt-[3px] mm:pt-[30px] md:pt-4 xl:pt-[9px] flex justify-end">See more</Link>
+    <a href={path} className="text-color-secondary transition duration-500 ease-in-out hover:text-color-accent-extra focus:text-color-accent-extra
+        text-[15px] leading-[18px] font-normal mm:font-medium mm:text-lg mm:leading-[21.6px] xl:text-xl xl:leading-6 xl:font-bold underline px-3 mm:px-[22px] xl:px-2 pt-[3px] mm:pt-[30px] md:pt-4 xl:pt-[9px] flex justify-end">
+          See more
+      </a>
     </div>
   )
 }

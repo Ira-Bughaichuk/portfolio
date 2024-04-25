@@ -1,8 +1,9 @@
 import { IBtnProjectProps } from "@/utils/types"
 
-export default function BtnProject({tag,onClick, isSelected}:IBtnProjectProps) {
-    const buttonStyle = isSelected ? "text-color-accent-primary" : "text-color-primary"
+export default function BtnProject({tag, onClick, isSelected}:IBtnProjectProps) {
+    const buttonStyle = isSelected ?  "color-btn-secondary" : "color-primary";
+    
   return (
-    <button type="button" className={` ${buttonStyle} font-roboto leading-[1.2px] font-bold `}  onClick={() => onClick(tag)}>{tag}</button>
+    <button type="button" className={`text-${buttonStyle} font-roboto leading-[1.2px] font-bold `}  onClick={() => onClick(tag)}>{tag}</button>
   )
 }

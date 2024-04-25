@@ -2,17 +2,17 @@
 import { IButtonNavProps } from '@/utils/types';
 import { usePathname } from 'next/navigation';
 
-export default function ButtonNav({ handlerToggle, open }: IButtonNavProps) {
+export default function ButtonNav({ handlerToggle, open, type }: IButtonNavProps) {
 const pathname: string = usePathname();
-const isActive = pathname === '/' ? 'after:bg-color-btn-primary before:bg-color-btn-primary' : 'after:bg-color-btn-main before:bg-color-btn-main';
-  
+const colorCross = pathname === '/' ? 'after:bg-color-btn-primary before:bg-color-btn-primary' : 'after:bg-color-btn-main before:bg-color-btn-main';
+const colorCrossMobileMenu = type === 'mobile' ? 'after:bg-color-btn-main before:bg-color-btn-main' : colorCross;
   return (
     <button
       type="button"
       onClick={() => handlerToggle()}
       className="w-6 h-6 flex items-center justify-center pointer text-color-accent-primary hover:text-color-primary outline-none border-none bg-transparent"
     >
-      <div className={`relative z-30 duration-500 ease-in-out ${isActive}
+      <div className={`relative z-30 duration-500 ease-in-out ${colorCrossMobileMenu}
           after:content-[''] after:block after:absolute after:w-6 after:h-[2px]
           after:left-[50%] after:transform after:-translate-x-1/2  after:-translate-y-1/2  
           before:content-[''] before:block before:absolute before:w-6 before:h-[2px]
