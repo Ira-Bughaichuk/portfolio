@@ -1,7 +1,8 @@
 import { fetchProjects } from '../../../sanityportfolio/requests/fetchProjects';
 import Title from '@/components/Title/Title';
-import { Data } from '@/utils/types';
 import ProjectList from '@/components/ProjectList/ProjectList';
+
+import { Data } from '@/utils/types';
 
 export default async function Page() {
   const data:Data = await fetchProjects();

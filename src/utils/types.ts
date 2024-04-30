@@ -58,6 +58,9 @@ export type Offer = {
   description: string;
 };
 //props
+export type ILogoProps = {
+  type? : string;
+}
 
 export type INavLinkProps = {
   title: string;

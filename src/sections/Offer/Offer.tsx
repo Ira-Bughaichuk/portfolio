@@ -28,7 +28,8 @@ export default function Offer() {
               width={300}
               height={300}
               loading="lazy" 
-              className="object-contain w-[200px] h-[200px] md:w-[180px] md:h-[180px] xl:w-[299px] xl:h-[299px]"
+              className="object-contain w-[200px] h-[200px] md:w-[180px] md:h-[180px] xl:w-[299px] xl:h-[299px]
+              hover:rotate-6 duration-500"
             />
           </li>
         </ul>

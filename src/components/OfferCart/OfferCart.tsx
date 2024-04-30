@@ -3,7 +3,8 @@ import { IOfferProps } from "@/utils/types";
 export default function OfferCart({ index, title, description }: IOfferProps) {
   const currentColor = index % 2 ? "text-color-accent-primary" : "text-color-accent-extra";
   return (
-    <div className="flex flex-col items-center gap-2 md:flex-row xl:gap-4 xl:justify-end">
+    <div className="flex flex-col items-center gap-2 md:flex-row xl:gap-4 xl:justify-end
+        hover:translate-x-6  duration-500">
       <p className={`${currentColor} text-center font-ribeye_marrow text-[64px] font-normal not-italic leading-normal`}>
         {index + 1}
       </p>

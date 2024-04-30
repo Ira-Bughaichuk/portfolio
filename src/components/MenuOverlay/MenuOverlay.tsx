@@ -1,16 +1,16 @@
 import Image from "next/image";
-import { IMenuOverlayProps } from "@/utils/types";
 import ButtonNav from "../ButtonNav/ButtonNav";
-import BtnDownload  from '@/components/BtnDownload/BtnDownload';
+import BtnDownload  from '../BtnDownload/BtnDownload';
 import NavLink from "./../NavLink/NavLink";
 import Logo from "./../Logo/Logo";
 import { navLinks } from "./../../utils/Data/navLink";
 import photoToNav from '../../../public/images/nav.png';
 import Arrow from '../../../public/icons/arrow.svg';
+import { IMenuOverlayProps } from "@/utils/types";
+
 
 export default function MenuOverlay({ open, handlerToggle}: IMenuOverlayProps) {
 
- 
   return (
     <div className={`fixed z-30 top-0 left-0 duration-1000 transition ease-in-out ${open ? "left-0" : "left-[-100%]"} w-full h-full navigation-gradient overflow-y-auto`}>
         <div className="absolute top-4 right-4 mm:top-5 mm:right-5">
@@ -40,7 +40,7 @@ export default function MenuOverlay({ open, handlerToggle}: IMenuOverlayProps) {
               ))}
             </ul>
           </nav>
-          <BtnDownload title={'DownLoad CV'} path={'../../../public/files/Iryna_Byghaichuk_front-3.pdf'}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnDownload>
+          <BtnDownload title={"DownLoad CV"} path={"./files/Iryna_Buhaichuk_Front_CV.pdf"}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnDownload>
         </div>
       </div>
       </div>

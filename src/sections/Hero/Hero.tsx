@@ -1,8 +1,29 @@
 'use client';
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 import profileMe from "../../../public/images/hero.jpg";
 import Arrow from '../../../public/icons/arrow.svg';
 import BtnDownload from '@/components/BtnDownload/BtnDownload';
+
+const fadeIn = {
+  initial: {
+    y: 100,
+    width: 100,
+  },
+  animate: {
+    y: 0,
+    width: 0,
+    transition: {
+      duration: 0.5 ,
+    },
+  },
+  exit: {
+    y: [0, 100],
+    width: [0, 100],
+  }
+};
 
 export default function Hero() {
 
@@ -40,7 +61,11 @@ export default function Hero() {
             </div>
           </div>
           
-          <div className="font-mono text-color-secondary flex-1  mm:flex-auto">
+          <motion.div
+          variants={fadeIn} 
+          initial='hidden'
+          animate='animate'
+          className="font-mono text-color-secondary flex-1  mm:flex-auto">
             <h1 className="font-mono hidden mm:block mb-[70px] text-4xl not-italic font-medium leading-[43.2px] mm:text-5xl mm:leading-[57.6px] xl:text-8xl xl:leading-[115.2px]">Frontend <span className="w-full flex justify-end">Developer</span></h1>
             <div className="mb-[34px] mm:mb-[60px] flex flex-col gap-5 mm:gap-4 xl:gap-[30px] text-[15px] leading-[19.5px] mm:text-[16px] mm:leading-[20.8px]xl:text-xl xl:leading-[26px]">
               <p className='mm:w-[320px] md:w-[361px] xl:w-[535px]'>
@@ -55,9 +80,8 @@ export default function Hero() {
               </p>
               </div>
             </div>
-            <BtnDownload title={'DownLoad CV'} path={'Iryna_Byghaichuk_front-3.pdf'}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnDownload>
-            {/* <BtnPrimary title={'DownLoad CV'} typeBtn={"button"} onClick={handleClick}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnPrimary> */}
-          </div>
+            <BtnDownload title={"DownLoad CV"} path={"./files/Iryna_Buhaichuk_Front_CV.pdf"}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnDownload>
+          </motion.div>
         </div>
         </div>
     </section>
