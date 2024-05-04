@@ -1,23 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+
 import CartSkill from "./../../components/CartSkill/CartSkill";
 import Title from "./../../components/Title/Title";
 import { skillsList } from "./../../utils/Data/skillsList";
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
+import { fadeInAnimationVariantsItem } from './../../utils/animeFunctions';
+
 
 export default function Skills() {
   const techList = Object.values(skillsList)[0];
@@ -33,7 +23,7 @@ export default function Skills() {
               techList.map((item, index) => (
                 <motion.li className='w-[100px] h-[100px] mm:w-[140px] mm:h-[140px] xl:w-[160px] xl:h-[160px]'
                   key={index}
-                  variants={fadeInAnimationVariants}
+                  variants={fadeInAnimationVariantsItem}
                   initial="initial"
                   whileInView="animate"
                   viewport={{
@@ -50,7 +40,7 @@ export default function Skills() {
               softList.map((item, index) => (
                 <motion.li className='w-[100px] h-[100px] mm:w-[140px] mm:h-[140px] xl:w-[160px] xl:h-[160px]'
                   key={index}
-                  variants={fadeInAnimationVariants}
+                  variants={fadeInAnimationVariantsItem}
                   initial="initial"
                   whileInView="animate"
                   viewport={{
