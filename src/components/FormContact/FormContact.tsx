@@ -1,6 +1,5 @@
 'use client';
-import { useState } from 'react';
-import {  useFormStatus } from "react-dom";
+import { useFormStatus } from "react-dom";
 import Square from '../../../public/icons/square.svg';
 import BtnPrimary from '../BtnPrimary/BtnPrimary';
 import { sendEmail } from '@/actions/sendEmail';
@@ -8,11 +7,11 @@ import { sendEmail } from '@/actions/sendEmail';
 import s from './FormContact.module.css';
 
 export default function FormContact() {
-  const { pending } = useFormStatus();
+  // const { pending } = useFormStatus();
   
   return (
     <form  action={ async (formData) => {
-      const { data, error } = await sendEmail(formData);
+      const { error } = await sendEmail(formData);
 
       if (error) {
         alert(error);
@@ -30,7 +29,7 @@ export default function FormContact() {
         </div>
         <textarea className={s.textarea_item} name="message" required placeholder="Enter project Description"></textarea>
       </div>
-      <BtnPrimary title={'Submit order'} typeBtn={'submit'} pending={pending}><Square width={24} height={24} aria-label="Square"/></BtnPrimary>
+      <BtnPrimary title={'Submit order'} typeBtn={'submit'}><Square width={24} height={24} aria-label="Square"/></BtnPrimary>
     </form>
   );
 }

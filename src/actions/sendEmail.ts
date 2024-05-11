@@ -3,7 +3,6 @@
 import React from "react";
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
-// import EmailTemplate from "@/components/EmailTemplate/EmailTemplate";
 import { EmailFile } from "@/components/EmailFile/EmailFile";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -17,11 +16,7 @@ export const sendEmail = async (formData: FormData) => {
   const usernName = formData.get("usernName");
   const companyName = formData.get("companyName");
   const phone = formData.get("phone");
-  // console.log("senderEmail", formData.get("senderEmail"));
-  // console.log("message", formData.get("message"));
-  // console.log("name", formData.get("usernName"));
-  // console.log("company", formData.get("companyName"));
-  // console.log("tell", formData.get("phone"));
+  
   
 
   // simple server-side validation

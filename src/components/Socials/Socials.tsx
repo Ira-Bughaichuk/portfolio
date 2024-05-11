@@ -8,7 +8,7 @@ import Telegram from "../../../public/icons/telegram.svg";
 import Linkedin from "../../../public/icons/linkedIn.svg";
 import Gmail from "../../../public/icons/gmail.svg";
 
-import { fadeInAnimationVertical, fadeInAnimationVerticalItem } from "./../../utils/animeFunctions";
+import { fadeInAnimationVerticalItem } from "./../../utils/animeFunctions";
 
 export default function Socials() {
   return (
