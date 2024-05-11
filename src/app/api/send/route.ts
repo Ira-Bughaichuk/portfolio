@@ -1,6 +1,6 @@
 
 // import EmailTemplate from '@/components/EmailTemplate/EmailTemplate';
- import { Resend } from 'resend';
+//  import { Resend } from 'resend';
 // import * as React from 'react';
 // import { NextResponse } from 'next/server';
 
