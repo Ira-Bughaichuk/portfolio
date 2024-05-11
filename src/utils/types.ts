@@ -106,11 +106,11 @@ export type ICartProjectsProps = {
     projectURL:string;
   }
 }
-export type IBtnPrimaryProps ={
+export type IBtnFormProps ={
   title:string;
   typeBtn: 'submit' | 'button';
   // pending: boolean;
-  onClick?: ()=> void;
+  // onClick?: ()=> void;
   children: React.ReactNode;
 }
 export type IBtnDownloadProps = {

@@ -1,8 +1,10 @@
 'use client';
 // import { useFormStatus } from "react-dom";
+import BtnForm from '../BtnForm/BtnForm';
+
 import Square from '../../../public/icons/square.svg';
-import BtnPrimary from '../BtnPrimary/BtnPrimary';
 import { sendEmail } from '@/actions/sendEmail';
+
 
 import s from './FormContact.module.css';
 
@@ -29,7 +31,7 @@ export default function FormContact() {
         </div>
         <textarea className={s.textarea_item} name="message" required placeholder="Enter project Description"></textarea>
       </div>
-      <BtnPrimary title={'Submit order'} typeBtn={'submit'}><Square width={24} height={24} aria-label="Square"/></BtnPrimary>
+      <BtnForm title={'Submit order'} typeBtn={'submit'}><Square width={24} height={24} aria-label="Square"/></BtnForm>
     </form>
   );
 }

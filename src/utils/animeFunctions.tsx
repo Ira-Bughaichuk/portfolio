@@ -45,7 +45,7 @@ export const fadeInAnimationHorizontal = (direction : string) => ({
       y: 0,
       transition: {
         delay: 0.3,
-        duration: 0.8
+        duration: 0.6
       },
     },
   };
