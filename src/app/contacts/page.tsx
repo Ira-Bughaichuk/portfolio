@@ -2,7 +2,7 @@
 import Socials from '@/components/Socials/Socials';
 import Title  from '@/components/Title/Title';
 import Image from 'next/image';
-// import FormContact from '../../components/FormContact/FormContact';
+import FormContact from '../../components/FormContact/FormContact';
 import ContactsInfo from './../../components/ContactsInfo/ContactsInfo';
 import letsworkPhoto from './../../../public/images/lets-work.png';
 
@@ -19,7 +19,7 @@ export default function Page() {
                 <p className="text-[15px] font-normal leading-[22.5px] mm:text-lg mm:leading-[27px] xl:text-2xl xl:leading-9">After placing the order, I will contact you to confirm the details and proceed with the project.</p>
               </div>
               <div className="flex flex-col gap-5 mm:gap-[40px] xl:gap-[60px]">
-                {/* <FormContact /> */}
+                <FormContact />
                 <div className="flex flex-col gap-5 mm:flex-row-reverse mm:gap-0 mm:justify-between">
                   <div className="w-[358px] h-[249px] mm:w-[368px] mm:h-[254px] md:h-[270px] xl:w-[632px] xl:h-[423px]">
                     <Image src={letsworkPhoto} 
