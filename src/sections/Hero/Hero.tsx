@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import profileMe from "../../../public/images/hero.jpg";
 import Arrow from '../../../public/icons/arrow.svg';
 import BtnDownload from '@/components/BtnDownload/BtnDownload';
-import { fadeInAnimationHorizontal, fadeInAnimationVertical } from './../../utils/animeFunctions';
+import { fadeInAnimationHorizontal } from './../../utils/animeFunctions';
 
 export default function Hero() {
 
