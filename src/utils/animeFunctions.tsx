@@ -1,6 +1,6 @@
 
 // коли екран на секції
-// hero, about, skills, my projects, 
+// hero, about, btn-my-projects, 
 export const fadeInAnimationHorizontal = (direction : string) => ({
     initial: {
       opacity: 0,
@@ -17,7 +17,7 @@ export const fadeInAnimationHorizontal = (direction : string) => ({
   });
 
 
-  // about buttons
+  // about buttons education
   export const fadeInAnimationVerticalItem = {
     initial: {
       opacity: 0,
@@ -28,7 +28,7 @@ export const fadeInAnimationHorizontal = (direction : string) => ({
       y: 0,
       transition: {
         delay: 0.3 * index,
-        duration: 0.8
+        duration: 0.7
       },
     }),
   };
@@ -49,7 +49,7 @@ export const fadeInAnimationHorizontal = (direction : string) => ({
       },
     },
   };
-// skills
+// skills, 
   export const fadeInAnimationVariantsItem = {
     initial: {
       opacity: 0,
@@ -63,3 +63,24 @@ export const fadeInAnimationHorizontal = (direction : string) => ({
       },
     }),
   };
+//offer-list, project-list
+export const fadeInAnimationHorizontalItem = (index: number) => {
+  const isEven = index % 2 === 0;
+
+  return {
+    initial: {
+      opacity: 0,
+      x: isEven ? 100 : -100,
+    },
+    show: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: 0.05 * index,
+        bounce: 0.4,
+        duration: 0.8
+      },
+    },
+  };
+};
+

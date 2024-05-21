@@ -1,14 +1,17 @@
 import Image from "next/image";
+
 import { urlFor } from "../../../sanityportfolio/client/client";
-import { ICartProjectsProps } from "@/utils/types";
+
 import Buttons from "../Buttons/Buttons";
-import GitHub from '../../../public/icons/github.svg';
-import Arrow from '../../../public/icons/arrow.svg';
 import SubCart from "../SubCart/SubCart";
 
-export default function CartProjects({item}:ICartProjectsProps) {
-  console.log("item", item);
-  // const { projectTitle,mainTechnology, technologyTitle, smallDescription, titleImage, gitURL, projectURL}=item;
+import GitHub from '../../../public/icons/github.svg';
+import Arrow from '../../../public/icons/arrow.svg';
+
+import { ICartProjectsProps } from "@/utils/types";
+
+export default function CartProjects({ item }: ICartProjectsProps) {
+  // const { gitURL, mainTechnology, projectTitle,projectURL, smallDescription, tag,  technologyTitle, titleImage, _id, }=item;
   return (
     <div className="group relative"> 
     <SubCart framework={item.mainTechnology} />

@@ -1,8 +1,15 @@
+'use client';
+
+import { motion } from "framer-motion";
 import Image from "next/image";
+
 import offer from "./../../../public/images/cart-offer.png";
 import OfferCart from "@/components/OfferCart/OfferCart";
 import Title from "./../../components/Title/Title";
+
 import { offerList } from "@/utils/Data/offerList";
+import { fadeInAnimationHorizontalItem } from "./../../utils/animeFunctions";
+
 import s from "./offer.module.css";
 
 export default function Offer() {
@@ -13,13 +20,18 @@ export default function Offer() {
         <ul className={` ${s.parent}`}>
           {offerList &&
             offerList.map(({ currentClass, title, description }, index) => (
-              <li key={index} className={` ${currentClass}`}>
-                <OfferCart
-                  index={index}
-                  title={title}
-                  description={description}
-                />
-              </li>
+              <motion.li key={index} className={` ${currentClass}`}
+                  custom={index}
+                  variants={fadeInAnimationHorizontalItem(index)}
+                  initial="initial"
+                  whileInView="show"
+                  viewport={{ once: true }}>
+                    <OfferCart
+                      index={index}
+                      title={title}
+                      description={description}
+                    />
+              </motion.li>
             ))}
           <li className="cart_image">
             <Image

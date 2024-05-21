@@ -80,15 +80,9 @@ export default function Hero() {
               </p>
               </div>
             </div>
-            <motion.div
-              variants={fadeInAnimationVertical} 
-              initial="initial"
-              whileInView="show"
-              viewport={{
-                once: true,
-              }}>
-              <BtnDownload title={"DownLoad CV"} path={"./files/Iryna_Buhaichuk_Front_CV.pdf"}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnDownload>
-            </motion.div>
+              <BtnDownload title={"DownLoad CV"} path={"./files/Iryna_Buhaichuk_Front_CV.pdf"}>
+                <Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/>
+              </BtnDownload>
           </motion.div>
         </div>
         </div>

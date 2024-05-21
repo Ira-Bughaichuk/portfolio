@@ -1,11 +1,13 @@
 'use client';
 
-import { useState, useRef  } from 'react';
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
+import { useState} from 'react';
 
 import CartProjects from "../CartProjects/CartProjects";
 import BtnProject  from '@/components/BtnProject/BtnProject';
 import { IProjectListProps } from '@/utils/types';
+import { fadeInAnimationHorizontalItem } from './../../utils/animeFunctions';
+
 
 export default function ProjectList({projectList}:IProjectListProps) {
   const [tag, setTag] = useState("All");
@@ -17,14 +19,6 @@ export default function ProjectList({projectList}:IProjectListProps) {
     return project.tag.includes(tag)
   })
 
-  const ref = useRef<HTMLUListElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.33 1"],
-  });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  // const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-  
   return (
     <>
       <div className='flex gap-4 xl:gap-[30px] justify-end mb-4 xl:mb-[44px]'>
@@ -32,17 +26,19 @@ export default function ProjectList({projectList}:IProjectListProps) {
             <BtnProject  onClick={handleTagChange} tag="Com" isSelected={tag === "Com"}/>
             <BtnProject  onClick={handleTagChange} tag="Pet" isSelected={tag === "Pet"}/> 
       </div>
-      <motion.ul 
-      ref={ref}
-      style={{
-        scale: scaleProgess,
-        // opacity: opacityProgess,
-      }}
-      className='grid gap-[35px] md:grid-cols-2 md:gap-x-[24px] md:gap-y-[30px]'>
+      <ul className='grid gap-[35px] md:grid-cols-2 md:gap-x-[24px] md:gap-y-[30px]'>
       {filteredProjects && filteredProjects.map((item,index) =>(
-        <li key={index}><CartProjects item={item}/></li>
+        <motion.li 
+          key={index}
+          custom={index}
+          variants={fadeInAnimationHorizontalItem(index)}
+          initial="initial"
+          whileInView="show"
+          viewport={{ once: true }}>
+            <CartProjects item={item}/>
+        </motion.li>
       ))}
-    </motion.ul> 
+    </ul> 
   </>
   )
 }
