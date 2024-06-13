@@ -10,7 +10,7 @@ import { fadeInAnimationHorizontalItem } from './../../utils/animeFunctions';
 
 
 export default function ProjectList({projectList}:IProjectListProps) {
-  console.log(projectList);
+  // console.log(projectList);
   
   const [tag, setTag] = useState("All projects");
 
