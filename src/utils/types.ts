@@ -119,6 +119,7 @@ export type IBtnDownloadProps = {
   children: React.ReactNode;
 }
 export type IBtnProjectProps = {
+  title: string;
   tag:string; 
   onClick: (value:string) =>void; 
   isSelected:boolean; 
