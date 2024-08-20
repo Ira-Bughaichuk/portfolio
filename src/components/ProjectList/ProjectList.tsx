@@ -22,7 +22,7 @@ export default function ProjectList({projectList}:IProjectListProps) {
 
   return (
     <>
-      <div className='flex gap-4 xl:gap-[30px] justify-end mb-4 xl:mb-[44px]'>
+      <div className='flex flex-wrap gap-4 xl:gap-[30px] justify-end mb-4 xl:mb-[44px]'>
             <BtnProject  onClick={handleTagChange} title="All projects" tag="All" isSelected={tag === "All"}/>
             <BtnProject  onClick={handleTagChange} title="Study projects" tag="Study" isSelected={tag === "Study"}/> 
             <BtnProject  onClick={handleTagChange} title="Pet projects" tag="Pet" isSelected={tag === "Pet"}/>
