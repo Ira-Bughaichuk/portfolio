@@ -46,21 +46,25 @@ export default function ProjectList({ projectList }: IProjectListProps) {
           isSelected={tag === "Com"}
         />
       </div>
-      <ul className="grid gap-[35px] mm:grid-cols-2 md:gap-x-[24px] md:gap-y-[30px]">
-        {filteredProjects &&
-          filteredProjects.map((item, index) => (
-            <motion.li
-              key={index}
-              custom={index}
-              variants={fadeInAnimationHorizontalItem(index)}
-              initial="initial"
-              whileInView="show"
-              viewport={{ once: true }}
-            >
-              <CartProjects item={item} />
-            </motion.li>
-          ))}
-      </ul>
+      {filteredProjects.length === 0 ? 
+        (<h2 className="font-condensed text-center w-full text-color-primary mb-5 mm:mb-3 xl:mb-6 text-[13px] leading-[19.5px] font-normal mm:text-[15px] mm:leading-[22.5px] xl:text-xl xl:leading-6">Sorry, but I don't have any projects in this category at the moment.</h2>)
+        :
+        (<ul className="grid gap-[35px] mm:grid-cols-2 md:gap-x-[24px] md:gap-y-[30px]">
+          {filteredProjects &&
+            filteredProjects.map((item, index) => (
+              <motion.li
+                key={index}
+                custom={index}
+                variants={fadeInAnimationHorizontalItem(index)}
+                initial="initial"
+                whileInView="show"
+                viewport={{ once: true }}
+              >
+                <CartProjects item={item} />
+              </motion.li>
+            ))}
+        </ul>)
+      }
     </>
   );
 }
