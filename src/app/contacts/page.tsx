@@ -2,7 +2,7 @@
 import Socials from '@/components/Socials/Socials';
 import Title  from '@/components/Title/Title';
 import Image from 'next/image';
-// import FormContact from '../../components/FormContact/FormContact';
+
 import ContactsInfo from './../../components/ContactsInfo/ContactsInfo';
 import letsworkPhoto from './../../../public/images/lets-work.png';
 
