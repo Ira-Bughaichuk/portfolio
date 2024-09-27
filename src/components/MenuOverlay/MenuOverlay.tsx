@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { motion, Variants } from "framer-motion";
+
 import ButtonNav from "../ButtonNav/ButtonNav";
-import BtnDownload  from '../BtnDownload/BtnDownload';
+import { BtnDownload }  from '../BtnDownload/BtnDownload';
 import NavLink from "./../NavLink/NavLink";
 import Logo from "./../Logo/Logo";
 import { navLinks } from "./../../utils/Data/navLink";
@@ -8,6 +10,20 @@ import photoToNav from '../../../public/images/nav.png';
 import Arrow from '../../../public/icons/arrow.svg';
 import { IMenuOverlayProps } from "@/utils/types";
 
+const textAnimation: Variants  = {
+  hidden:{
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    x: 0,
+    opacity: 1,
+    transition: {
+      delay: custom * 0.2,
+      // duration: 0.8,
+    },
+  }),
+}
 
 export default function MenuOverlay({ open, handlerToggle}: IMenuOverlayProps) {
 
@@ -40,7 +56,7 @@ export default function MenuOverlay({ open, handlerToggle}: IMenuOverlayProps) {
               ))}
             </ul>
           </nav>
-          <BtnDownload title={"DownLoad CV"} path={"./files/Iryna_Buhaichuk_Front_CV.pdf"}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnDownload>
+          <BtnDownload custom={4} variants={textAnimation} title={"DownLoad CV"} path={"./files/Iryna_Buhaichuk_Front_CV.pdf"}><Arrow width={24} height={24} aria-label="Arrow" className='w-4 h-4 xl:w-6 xl:h-6'/></BtnDownload>
         </div>
       </div>
       </div>

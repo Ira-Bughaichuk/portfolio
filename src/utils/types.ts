@@ -1,3 +1,5 @@
+import { Variants } from "framer-motion";
+
 export type Data = {
   projects: ProjectCart[],
   total: number,
@@ -75,6 +77,8 @@ export type ITitleProps = {
 };
 
 export type ICartEducationProps = {
+  custom: number;
+  variants: Variants;
   university: string;
   profession: string;
   data: string;
@@ -82,20 +86,28 @@ export type ICartEducationProps = {
 };
 
 export type ILanguagesCartProps = {
+  custom: number;
+  variants: Variants;
   languages: string;
   level: string;
 };
 export type IOfferProps = {
+  custom: number;
+   variants: Variants;
   index: number;
   title: string;
   description: string;
 };
 export type ICartSkillProps = {
+  custom: number;
+  variants: Variants;
   title:string,
   index: number,
 }
 export type ICartProjectsProps = {
-  item:{
+  custom: number;
+   variants: Variants;
+  item: {
     projectTitle: string;
     mainTechnology:string;
     technologyTitle: string; 
@@ -104,7 +116,7 @@ export type ICartProjectsProps = {
     tag: string[];
     gitURL:string;
     projectURL:string;
-  }
+  };
 }
 export type IBtnFormProps ={
   title:string;
@@ -114,6 +126,8 @@ export type IBtnFormProps ={
   children: React.ReactNode;
 }
 export type IBtnDownloadProps = {
+  custom: number;
+  variants: Variants;
   title:string;
   path: string;
   children: React.ReactNode;

@@ -1,9 +1,13 @@
+import { motion } from "framer-motion";
+import { forwardRef } from "react";
+
 import { IOfferProps } from "@/utils/types";
 
-export default function OfferCart({ index, title, description }: IOfferProps) {
-  const currentColor = index % 2 ? "text-color-accent-primary" : "text-color-accent-extra";
+export const OfferCart = forwardRef<HTMLDivElement, IOfferProps>(({ custom, variants, index, title, description }, ref) => {
+  const currentColor = index % 2 === 0 ? "text-color-accent-primary" : "text-color-accent-extra";
   return (
-    <div className="flex flex-col items-center gap-2 md:flex-row xl:gap-4 xl:justify-end
+    <motion.div ref={ref} variants={variants} custom={custom}
+        className="flex flex-col items-center gap-2 md:flex-row xl:gap-4 xl:justify-end
         hover:translate-x-6  duration-500">
       <p className={`${currentColor} text-center font-ribeye_marrow text-[64px] font-normal not-italic leading-normal`}>
         {index + 1}
@@ -14,6 +18,6 @@ export default function OfferCart({ index, title, description }: IOfferProps) {
       <p className={`xl:w-[580px] text-center md:text-left font-condensed text-[15px] font-normal not-italic leading-[22.5px] md:text-lg md:leading-[27px] xl:text-2xl xl:leading-9`}> 
         {description}
       </p>
-    </div>
+    </motion.div>
   );
-}
+})

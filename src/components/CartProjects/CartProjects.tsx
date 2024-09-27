@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { forwardRef } from "react";
 
 import { urlFor } from "../../../sanityportfolio/client/client";
 
@@ -10,10 +12,11 @@ import Arrow from '../../../public/icons/arrow.svg';
 
 import { ICartProjectsProps } from "@/utils/types";
 
-export default function CartProjects({ item }: ICartProjectsProps) {
+export const CartProjects = forwardRef<HTMLDivElement, ICartProjectsProps>(({custom, variants, item }, ref) => {
   // const { gitURL, mainTechnology, projectTitle,projectURL, smallDescription, tag,  technologyTitle, titleImage, _id, }=item;
   return (
-    <div className="group relative"> 
+    <motion.div custom={custom} variants={variants} ref={ref}
+    className="group relative"> 
     <SubCart framework={item.mainTechnology} />
     <div className="h-full group-hover:bg-gradient-to-r from-[#e9a16b] from-[4.61%] via-[rgba(254, 226, 205, 0.6)] via-[48.56%] to-[rgba(254, 255, 193, 0.4)] to-[88.73%]
      flex flex-col gap-4 items-center xl:gap-[30px] px-4 py-4 xl:px-[40px] xl:py-[40px] rounded-[10px] overflow-hidden border-[1px] border-solid border-color-btn-extra">
@@ -40,6 +43,6 @@ export default function CartProjects({ item }: ICartProjectsProps) {
           </div>
         </div>
     </div>
-    </div>
+    </motion.div>
   )
-}
+})

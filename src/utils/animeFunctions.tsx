@@ -33,7 +33,6 @@ export const fadeInAnimationHorizontal = (direction : string) => ({
     }),
   };
 
-
   // one button
   export const fadeInAnimationVertical = {
     initial: {
@@ -63,6 +62,7 @@ export const fadeInAnimationHorizontal = (direction : string) => ({
       },
     }),
   };
+  
 //offer-list, project-list
 export const fadeInAnimationHorizontalItem = (index: number) => {
   const isEven = index % 2 === 0;
@@ -84,3 +84,54 @@ export const fadeInAnimationHorizontalItem = (index: number) => {
   };
 };
 
+
+// import { motion, Variants } from "framer-motion";
+// const cardProjects: Variants = {
+//   offscreen: {
+//     opacity: 0,
+//     y: 100,
+//   },
+//   onscreen: (index: number) => ({
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       type: "spring",
+//       bounce: 0.4,
+//       delay: 0.05 * index,
+//     },
+//   }),
+// };
+
+/// або 
+// const cardProjects: Variants = {
+//   offscreen: {
+//     opacity: 0,
+//     y: 100,
+//   },
+//   onscreen: (index: number) => ({
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       type: "spring",
+//       bounce: 0.4,
+//       delay: 0.05 * index,
+//     },
+//   }),
+// };
+
+// (<ul className="grid gap-[35px] mm:grid-cols-2 md:gap-x-[24px] md:gap-y-[30px]" 
+//         >
+//         {filteredProjects &&
+//           filteredProjects.map((item, index) => (
+//             <motion.li
+//               key={index}
+//               custom={index}
+//               variants={cardProjects}
+//               initial="offscreen"
+//               whileInView="onscreen"
+//               viewport={{ once: true, amount: 0.5 }}
+//             >
+//               <CartProjects item={item} />
+//             </motion.li>
+//           ))}
+//         </ul>)
