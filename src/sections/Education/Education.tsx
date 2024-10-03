@@ -3,7 +3,7 @@
 import { motion, Variants } from "framer-motion";
 
 import Title from "./../../components/Title/Title";
-import { CartEducation } from './../../components/CartEducation/CartEducation';
+import  CartEducation  from './../../components/CartEducation/CartEducation';
 import { educationList } from './../../utils/Data/educationList';
 
 // import { fadeInAnimationVerticalItem } from "./../../utils/animeFunctions";
@@ -22,7 +22,7 @@ const cardAnimation: Variants  = {
   }),
 }
 
-export default function Education() {
+function Education() {
 
   return (
     <section className='section'>
@@ -48,4 +48,7 @@ export default function Education() {
         </div>
     </section>
   )
-}
+};
+
+Education.displayName = "Education";
+export default Education;

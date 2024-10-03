@@ -1,3 +1,4 @@
+
 import { fetchProjects } from '../../../sanityportfolio/requests/fetchProjects';
 import Title from '@/components/Title/Title';
 import ProjectList from '@/components/ProjectList/ProjectList';
@@ -17,4 +18,4 @@ export default async function Page() {
           </section>
         </main>
     )
-}
+};

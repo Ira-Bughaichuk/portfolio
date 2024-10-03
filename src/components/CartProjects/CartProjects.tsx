@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { forwardRef } from "react";
@@ -12,7 +14,7 @@ import Arrow from '../../../public/icons/arrow.svg';
 
 import { ICartProjectsProps } from "@/utils/types";
 
-export const CartProjects = forwardRef<HTMLDivElement, ICartProjectsProps>(({custom, variants, item }, ref) => {
+const CartProjects = forwardRef<HTMLDivElement, ICartProjectsProps>(({custom, variants, item }, ref) => {
   // const { gitURL, mainTechnology, projectTitle,projectURL, smallDescription, tag,  technologyTitle, titleImage, _id, }=item;
   return (
     <motion.div custom={custom} variants={variants} ref={ref}
@@ -45,4 +47,7 @@ export const CartProjects = forwardRef<HTMLDivElement, ICartProjectsProps>(({cus
     </div>
     </motion.div>
   )
-})
+});
+
+CartProjects.displayName = "CartProjects";
+export default CartProjects;

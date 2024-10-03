@@ -24,7 +24,7 @@ import Gmail from "../../../public/icons/gmail.svg";
   }),
 };
 
-export default function Socials() {
+function Socials() {
   return (
     <motion.div 
         initial="initial"
@@ -139,3 +139,6 @@ export default function Socials() {
     </motion.div>
   );
 }
+
+Socials.displayName = "Socials";
+export default Socials;

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 import ButtonNav from "../ButtonNav/ButtonNav";
-import { BtnDownload }  from '../BtnDownload/BtnDownload';
+import BtnDownload  from '../BtnDownload/BtnDownload';
 import NavLink from "./../NavLink/NavLink";
 import Logo from "./../Logo/Logo";
 import { navLinks } from "./../../utils/Data/navLink";

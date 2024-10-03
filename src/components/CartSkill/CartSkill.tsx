@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 
 import { ICartSkillProps } from "@/utils/types";
 
-export const CartSkill = forwardRef<HTMLParagraphElement, ICartSkillProps>(({ custom, variants, title, index }, ref) => {
+const CartSkill = forwardRef<HTMLParagraphElement, ICartSkillProps>(({ custom, variants, title, index }, ref) => {
   const currentColor =
     index % 2 ? "bg-color-btn-main" : "cart-primary-gradient";
 
@@ -17,6 +17,9 @@ export const CartSkill = forwardRef<HTMLParagraphElement, ICartSkillProps>(({ cu
       {title}
     </motion.p>
   );
-})
+});
+
+CartSkill.displayName = "CartSkill";
+export default CartSkill;
       // hover:skew-y-3 hover:skew-x-6
       // hover:origin-top-right hover:rotate-12

@@ -20,4 +20,7 @@ export const CartEducation = forwardRef<HTMLDivElement, ICartEducationProps>(( {
       </a>
     </motion.div>
   )
-})
+});
+
+CartEducation.displayName = "CartEducation";
+export default CartEducation;

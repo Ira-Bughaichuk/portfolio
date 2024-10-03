@@ -4,7 +4,7 @@ import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 
 import offer from "./../../../public/images/cart-offer.png";
-import {OfferCart} from "@/components/OfferCart/OfferCart";
+import OfferCart from "@/components/OfferCart/OfferCart";
 import Title from "./../../components/Title/Title";
 
 import { offerList } from "@/utils/Data/offerList";
@@ -32,7 +32,7 @@ const fadeInAnimationHorizontalItem = (index: number): Variants => {
 };
 
 
-export default function Offer() {
+function Offer() {
   return (
     <section className="section">
       <div className="container mx-auto">
@@ -72,4 +72,7 @@ export default function Offer() {
       </div>
     </section>
   );
-}
+};
+
+Offer.displayName = "Offer";
+export default Offer;

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { forwardRef } from "react";
 import { IBtnDownloadProps } from "@/utils/types";
 
-export const BtnDownload = forwardRef< HTMLAnchorElement, IBtnDownloadProps>(
+const BtnDownload = forwardRef< HTMLAnchorElement, IBtnDownloadProps>(
   ({ custom, variants, title, path, children }, ref) => {
   return (
       <motion.a custom={custom} variants={variants} href={path} download ref={ref} 
@@ -14,3 +14,5 @@ export const BtnDownload = forwardRef< HTMLAnchorElement, IBtnDownloadProps>(
   )
 });
 
+BtnDownload.displayName = "BtnDownload";
+export default BtnDownload;

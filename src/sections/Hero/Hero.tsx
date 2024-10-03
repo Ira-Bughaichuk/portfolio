@@ -5,7 +5,7 @@ import { motion, Variants } from "framer-motion";
 
 import profileMe from "../../../public/images/hero.jpg";
 import Arrow from '../../../public/icons/arrow.svg';
-import { BtnDownload } from "@/components/BtnDownload/BtnDownload";
+import BtnDownload from "@/components/BtnDownload/BtnDownload";
 
 // import { fadeInAnimationHorizontal } from './../../utils/animeFunctions';
 

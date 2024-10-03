@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 
-import { LanguagesCart} from './../../components/LanguagesCart/LanguagesCart';
+import LanguagesCart from './../../components/LanguagesCart/LanguagesCart';
 import Title from './../../components/Title/Title';
 import { languagesList } from './../../utils/Data/languagesList';
 
@@ -23,7 +23,7 @@ const cardAnimation: Variants  = {
   }),
 }
 
-export default function Languages() {
+function Languages() {
 
   return (
     <section className="section">
@@ -56,4 +56,7 @@ export default function Languages() {
       </div>
     </section>
   );
-}
+};
+
+Languages.displayName = "Languages";
+export default Languages;

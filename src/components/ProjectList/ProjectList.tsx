@@ -1,15 +1,31 @@
 "use client";
 
 import { useState } from "react";
-import { motion, spring, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
-import { CartProjects }  from "../CartProjects/CartProjects";
+import CartProjects  from "../CartProjects/CartProjects";
 import BtnProject from "@/components/BtnProject/BtnProject";
 import { IProjectListProps } from "@/utils/types";
 
+const cardVariants: Variants = {
+  offscreen: {
+    y: -100,
+    opacity: 0,
+  },
+  onscreen: (custom: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.2 * custom,
+      duration: 0.5,
+    },
+  }),
+};
 
-export default function ProjectList({ projectList }: IProjectListProps) {
+
+ function ProjectList({ projectList }: IProjectListProps) {
   const [tag, setTag] = useState("All");
+  // const [arrList, setArrList] = useState(projectList);
 
   const handleTagChange = (newTag: string) => {
     setTag(newTag);
@@ -17,45 +33,30 @@ export default function ProjectList({ projectList }: IProjectListProps) {
   const filteredProjects = projectList.filter((project) => {
     return project.tag.includes(tag);
   });
-
-  const cardVariants: Variants = {
-    offscreen: {
-      y: -100,
-      opacity: 0,
-    },
-    onscreen: (custom: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.2 * custom,
-        duration: 0.5,
-      },
-    }),
-  };
-
+ 
   return (
     <>
         <div className="flex flex-wrap gap-5 xl:gap-[30px] justify-end mb-4 mm:mb-[34px] md:mb-[44px] xl:mb-[64px]">
           <BtnProject
-            onClick={handleTagChange}
+            onClick={() => handleTagChange("All")}
             title="All projects"
             tag="All"
             isSelected={tag === "All"}
           />
           <BtnProject
-            onClick={handleTagChange}
+            onClick={() => handleTagChange("Study")}
             title="Study projects"
             tag="Study"
             isSelected={tag === "Study"}
           />
           <BtnProject
-            onClick={handleTagChange}
+            onClick={() => handleTagChange("Pet")}
             title="Pet projects"
             tag="Pet"
             isSelected={tag === "Pet"}
           />
           <BtnProject
-            onClick={handleTagChange}
+            onClick={() => handleTagChange("Com")}
             title="Commercial projects"
             tag="Com"
             isSelected={tag === "Com"}
@@ -82,3 +83,6 @@ export default function ProjectList({ projectList }: IProjectListProps) {
     </>
   );
 }
+
+ProjectList.displayName = "ProjectList";
+export default ProjectList;

@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 
 import { ILanguagesCartProps } from "@/utils/types";
 
-export const LanguagesCart = forwardRef<HTMLDivElement, ILanguagesCartProps>(( {custom, variants, languages, level,}, ref ) =>{
+const LanguagesCart = forwardRef<HTMLDivElement, ILanguagesCartProps>(( {custom, variants, languages, level,}, ref ) =>{
   return (
     <motion.div ref={ref} variants={variants} custom={custom}
     className="font-condensed w-[150px] mm:w-[205px] xl:w-[250px] py-4 px-2 mm:py-[30px] mm:px-[22px] flex flex-col gap-2 mm:gap-6 items-center justify-center border-[1px] border-solid border-color-primary rounded-[10px]">
@@ -16,3 +16,6 @@ export const LanguagesCart = forwardRef<HTMLDivElement, ILanguagesCartProps>(( {
     </motion.div>
   );
 });
+
+LanguagesCart.displayName = "LanguagesCart";
+export default LanguagesCart;

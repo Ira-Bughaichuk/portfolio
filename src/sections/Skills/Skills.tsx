@@ -2,8 +2,7 @@
 
   import { motion, Variants } from "framer-motion";
 
-
-  import { CartSkill } from "./../../components/CartSkill/CartSkill";
+  import CartSkill from "./../../components/CartSkill/CartSkill";
   import Title from "./../../components/Title/Title";
   import { skillsList } from "./../../utils/Data/skillsList";
 
@@ -23,7 +22,7 @@
     }),
   }
 
-  export default function Skills() {
+function Skills() {
     const techList = Object.values(skillsList)[0];
     const softList = Object.values(skillsList)[1];
 
@@ -79,4 +78,7 @@
         </div>
       </section>
     );
-  } 
+};
+
+Skills.displayName = "Skills";
+export default Skills;

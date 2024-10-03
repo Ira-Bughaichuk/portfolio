@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 
 import { IOfferProps } from "@/utils/types";
 
-export const OfferCart = forwardRef<HTMLDivElement, IOfferProps>(({ custom, variants, index, title, description }, ref) => {
+const OfferCart = forwardRef<HTMLDivElement, IOfferProps>(({ custom, variants, index, title, description }, ref) => {
   const currentColor = index % 2 === 0 ? "text-color-accent-primary" : "text-color-accent-extra";
   return (
     <motion.div ref={ref} variants={variants} custom={custom}
@@ -20,4 +20,7 @@ export const OfferCart = forwardRef<HTMLDivElement, IOfferProps>(({ custom, vari
       </p>
     </motion.div>
   );
-})
+});
+
+OfferCart.displayName = "OfferCart";
+export default OfferCart;

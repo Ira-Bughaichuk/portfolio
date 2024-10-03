@@ -1,9 +1,43 @@
 import { Variants } from "framer-motion";
 
+export type ProjectCart = {
+  // _id: string;
+  // projectTitle: string;
+  // mainTechnology:string;
+  // projectLink: string;
+  // technologyTitle: string;
+  // smallDescription: string;
+  // category:string;
+  // titleImage: string; 
+  // tag: string[];
+  // gitURL: string;
+  // projectURL:string
+
+  mainTechnology: string;
+      gitURL: string;
+      projectURL: string;
+      _id: string;
+      technologyTitle: string;
+      smallDescription: string;
+      titleImage: string;
+      tag: string[];
+      projectTitle: string;
+}
 export type Data = {
   projects: ProjectCart[],
   total: number,
 }
+// export interface Project {
+//   _id: string;
+//   projectTitle: string;
+//   mainTechnology: string;
+//   technologyTitle: string;
+//   smallDescription: string;
+//   titleImage: string;
+//   tag: string;
+//   gitURL: string;
+//   projectURL: string;
+// }
 export type EmailFileProps = {
   senderEmail: string;
   message: string;
@@ -11,19 +45,7 @@ export type EmailFileProps = {
   companyName: string;
   phone: string;
 };
-export type ProjectCart = {
-  _id: string;
-  projectTitle: string;
-  mainTechnology:string;
-  projectLink: string;
-  technologyTitle: string;
-  smallDescription: string;
-  category:string;
-  titleImage: string;  // 
-  tag: string[];
-  gitURL: string;
-  projectURL:string
-}
+
 export type NavLink = {
   title: string;
   path: string; 

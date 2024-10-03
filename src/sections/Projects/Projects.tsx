@@ -55,7 +55,7 @@ export const fadeInAnimationVertical: Variants = {
 // };
 
 
-export default function Projects() {
+function Projects() {
  
   return (
     <motion.section 
@@ -101,4 +101,7 @@ export default function Projects() {
         </div>
     </motion.section>
   )
-}
+};
+
+Projects.displayName = "Projects";
+export default Projects;
