@@ -28,7 +28,11 @@ const textAnimation: Variants  = {
 export default function MenuOverlay({ open, handlerToggle}: IMenuOverlayProps) {
 
   return (
-    <div className={`fixed z-30 top-0 left-0 duration-1000 transition ease-in-out ${open ? "left-0" : "left-[-100%]"} w-full h-full navigation-gradient overflow-y-auto`}>
+    <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className={`fixed z-30 top-0 left-0 duration-1000 transition ease-in-out ${open ? "left-0" : "left-[-100%]"} w-full h-full navigation-gradient overflow-y-auto`}>
         <div className="absolute top-4 right-4 mm:top-5 mm:right-5">
         <ButtonNav handlerToggle={handlerToggle} open={open} type={'mobile'} />
         </div>
@@ -60,6 +64,6 @@ export default function MenuOverlay({ open, handlerToggle}: IMenuOverlayProps) {
         </div>
       </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

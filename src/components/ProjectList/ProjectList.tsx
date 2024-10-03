@@ -27,7 +27,6 @@ export default function ProjectList({ projectList }: IProjectListProps) {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
         delay: 0.2 * custom,
         duration: 0.5,
       },
