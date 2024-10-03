@@ -1,4 +1,4 @@
-'use client';
+
 
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -14,8 +14,8 @@ import Arrow from '../../../public/icons/arrow.svg';
 
 import { ICartProjectsProps } from "@/utils/types";
 
-const CartProjects = forwardRef<HTMLDivElement, ICartProjectsProps>(({custom, variants, item }, ref) => {
-  // const { gitURL, mainTechnology, projectTitle,projectURL, smallDescription, tag,  technologyTitle, titleImage, _id, }=item;
+ const CartProjects = forwardRef<HTMLDivElement, ICartProjectsProps>(({custom, variants, item }, ref) => {
+
   return (
     <motion.div custom={custom} variants={variants} ref={ref}
     className="group relative"> 

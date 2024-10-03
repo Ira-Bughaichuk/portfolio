@@ -1,43 +1,22 @@
 import { Variants } from "framer-motion";
 
 export type ProjectCart = {
-  // _id: string;
-  // projectTitle: string;
-  // mainTechnology:string;
-  // projectLink: string;
-  // technologyTitle: string;
-  // smallDescription: string;
-  // category:string;
-  // titleImage: string; 
-  // tag: string[];
-  // gitURL: string;
-  // projectURL:string
-
-  mainTechnology: string;
-      gitURL: string;
-      projectURL: string;
-      _id: string;
-      technologyTitle: string;
-      smallDescription: string;
-      titleImage: string;
-      tag: string[];
-      projectTitle: string;
+  _id: string;
+  projectTitle: string;
+  mainTechnology:string;
+  projectLink: string;
+  technologyTitle: string;
+  smallDescription: string;
+  category:string;
+  titleImage: string; 
+  tag: string[];
+  gitURL: string;
+  projectURL:string;
 }
 export type Data = {
   projects: ProjectCart[],
   total: number,
 }
-// export interface Project {
-//   _id: string;
-//   projectTitle: string;
-//   mainTechnology: string;
-//   technologyTitle: string;
-//   smallDescription: string;
-//   titleImage: string;
-//   tag: string;
-//   gitURL: string;
-//   projectURL: string;
-// }
 export type EmailFileProps = {
   senderEmail: string;
   message: string;
@@ -128,13 +107,13 @@ export type ICartSkillProps = {
 }
 export type ICartProjectsProps = {
   custom: number;
-   variants: Variants;
+  variants: Variants;
   item: {
     projectTitle: string;
     mainTechnology:string;
     technologyTitle: string; 
     smallDescription: string;
-    titleImage: string; // maybe SanityImageSource
+    titleImage: string; 
     tag: string[];
     gitURL:string;
     projectURL:string;
