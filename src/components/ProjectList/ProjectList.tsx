@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion, Variants } from "framer-motion";
 
 import CartProjects  from "../CartProjects/CartProjects";
@@ -29,9 +29,16 @@ const cardVariants: Variants = {
   const handleTagChange = (newTag: string) => {
     setTag(newTag);
   };
-  const filteredProjects = projectList.filter((project) => {
-    return project.tag.includes(tag);
-  });
+  
+  const filteredProjects = useMemo(() => 
+  projectList.filter((project) => project.tag.includes(tag)), [tag, projectList]
+);
+  
+// console.log('projectArray', projectArray);
+
+  // const filteredProjects = projectList.filter((project) => {
+  //   return project.tag.includes(tag);
+  // });
  
   
   return (
@@ -63,7 +70,7 @@ const cardVariants: Variants = {
           />
         </div>
 
-        {filteredProjects.length === 0 ? 
+        {filteredProjects.length < 0 ? 
           (<h2 className="font-condensed text-center w-full text-color-primary mb-5 mm:mb-3 xl:mb-6 text-[13px] leading-[19.5px] font-normal mm:text-[15px] mm:leading-[22.5px] xl:text-xl xl:leading-6">Sorry, but I don`t have any projects in this category at the moment.</h2>)
           :
           (<div className="grid gap-[35px] mm:grid-cols-2 md:gap-x-[24px] md:gap-y-[30px]">

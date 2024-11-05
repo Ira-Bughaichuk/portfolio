@@ -13,7 +13,7 @@ export default async function Page() {
           <section className="section">
               <div className="container mx-auto">
                   <Title type="main" title='My Projects'/>
-                  {data.projects && <ProjectList projectList={data.projects}/>}
+                  <ProjectList projectList={data.projects}/>
               </div>
           </section>
         </main>
